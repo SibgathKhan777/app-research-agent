@@ -57,13 +57,3 @@ python -m pytest
 ## Where a human was needed
 
 API keys; the schema and the definition of "buildable"; reading sites that block bots or render docs only in a browser; hand-labelling the 20-app sample (done by the AI assistant against live docs); and the audit of 5 labels (done by a person). Everything else ran unattended.
-
-## Known limits
-
-- Search credits (Tavily free tier) ran out near the end of the run; one app (Grain) was finished from cached results plus direct page probing.
-- Free-vs-gated access is the hardest field: on the sample the commonest error was calling a gated API free (Sentry, Amazon Selling Partner). A real quote does not guarantee the conclusion is right.
-- "No OpenAPI spec" and "no MCP server" cannot be proven by a quote, so those fields are often "unknown".
-- The second-model cross-check (gpt-oss-120b) covers 6 of the 20 sample apps; it hit the free-tier daily limit.
-- One retrieval keyword in the MCP search query was generalised after the run, so a fresh rerun builds slightly different prompts than the frozen pass 1 did.
-- Vendor docs change. Each row is a dated claim (November 2026).
-- `data/pages/` (the scraped page texts) is not committed; rerun discovery to regenerate it.
