@@ -56,4 +56,4 @@ python -m pytest
 
 ## Where a human was needed
 
-API keys; the schema and the definition of "buildable"; reading sites that block bots or render docs only in a browser; hand-labelling the 20-app sample (done by the AI assistant against live docs); and the audit of 5 labels (done by a person). Everything else ran unattended.
+API keys; the schema and the definition of "buildable"; reading sites that block bots or render docs only in a browser; hand-labelling the 20-app sample (done by the AI assistant against live docs); and the audit of 5 labels (done by a person).
