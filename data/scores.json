@@ -1,0 +1,843 @@
+[
+ {
+  "file": "data/pass1_frozen.jsonl",
+  "overall": {
+   "correct": 182,
+   "total": 199,
+   "accuracy": 0.9146
+  },
+  "per_field": {
+   "one_liner": {
+    "correct": 20,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 1.0
+   },
+   "auth_methods": {
+    "correct": 20,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 1.0
+   },
+   "access_tier": {
+    "correct": 18,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 0.9
+   },
+   "delivery": {
+    "correct": 20,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 1.0
+   },
+   "api_styles": {
+    "correct": 19,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 0.95
+   },
+   "api_breadth": {
+    "correct": 18,
+    "total": 19,
+    "answered": 19,
+    "accuracy": 0.9474
+   },
+   "openapi_spec": {
+    "correct": 13,
+    "total": 20,
+    "answered": 13,
+    "accuracy": 0.65
+   },
+   "official_mcp": {
+    "correct": 16,
+    "total": 20,
+    "answered": 17,
+    "accuracy": 0.8
+   },
+   "buildability": {
+    "correct": 19,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 0.95
+   },
+   "main_blocker": {
+    "correct": 19,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 0.95
+   }
+  },
+  "misses": [
+   {
+    "app": "otter-ai",
+    "name": "Otter AI",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/36130822688279",
+    "note": "no spec found"
+   },
+   {
+    "app": "youtube-transcript",
+    "name": "YouTube Transcript",
+    "field": "api_breadth",
+    "pred": "narrow",
+    "truth": [
+     "medium"
+    ],
+    "evidence_url": "https://transcriptapi.com/docs/api",
+    "note": "13 endpoints listed"
+   },
+   {
+    "app": "copper",
+    "name": "Copper",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "https://developer.copper.com",
+    "note": "Postman collection only"
+   },
+   {
+    "app": "zoho-crm",
+    "name": "Zoho CRM",
+    "field": "official_mcp",
+    "pred": "unknown",
+    "truth": [
+     "True"
+    ],
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+    "note": ""
+   },
+   {
+    "app": "discord",
+    "name": "Discord",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "True"
+    ],
+    "evidence_url": "https://github.com/discord/discord-api-spec",
+    "note": ""
+   },
+   {
+    "app": "discord",
+    "name": "Discord",
+    "field": "official_mcp",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "none found on vendor docs"
+   },
+   {
+    "app": "mrscraper",
+    "name": "MrScraper",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "no spec found"
+   },
+   {
+    "app": "github",
+    "name": "GitHub",
+    "field": "official_mcp",
+    "pred": "unknown",
+    "truth": [
+     "True"
+    ],
+    "evidence_url": "https://github.com/github/github-mcp-server",
+    "note": ""
+   },
+   {
+    "app": "sentry",
+    "name": "Sentry",
+    "field": "access_tier",
+    "pred": "self_serve_free",
+    "truth": [
+     "paid_plan",
+     "self_serve_trial"
+    ],
+    "evidence_url": "https://sentry.io/pricing/",
+    "note": "Developer (free) plan table: 'API | No'; Team plan first with API"
+   },
+   {
+    "app": "sentry",
+    "name": "Sentry",
+    "field": "buildability",
+    "pred": "ready",
+    "truth": [
+     "ready_with_friction",
+     "blocked"
+    ],
+    "evidence_url": "",
+    "note": "API needs Team plan"
+   },
+   {
+    "app": "sentry",
+    "name": "Sentry",
+    "field": "main_blocker",
+    "pred": "none",
+    "truth": [
+     "paid_plan_required"
+    ],
+    "evidence_url": "",
+    "note": ""
+   },
+   {
+    "app": "amazon-selling-partner",
+    "name": "Amazon Selling Partner",
+    "field": "access_tier",
+    "pred": "self_serve_free",
+    "truth": [
+     "admin_approval",
+     "paid_plan",
+     "partner_gated"
+    ],
+    "evidence_url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+    "note": "'Only Professional Selling Accounts can register'; developer profile reviewed"
+   },
+   {
+    "app": "quickbooks",
+    "name": "QuickBooks",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "no spec found"
+   },
+   {
+    "app": "quickbooks",
+    "name": "QuickBooks",
+    "field": "official_mcp",
+    "pred": false,
+    "truth": [
+     "True"
+    ],
+    "evidence_url": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "note": ""
+   },
+   {
+    "app": "google-ads",
+    "name": "Google Ads",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "discovery document, not OpenAPI"
+   },
+   {
+    "app": "airtable",
+    "name": "Airtable",
+    "field": "api_styles",
+    "pred": [
+     "rest",
+     "websocket"
+    ],
+    "truth": {
+     "req": [
+      "rest"
+     ],
+     "allow": []
+    },
+    "evidence_url": "https://airtable.com/developers/web/api/introduction",
+    "note": "webhooks are HTTP callbacks, not WebSocket"
+   },
+   {
+    "app": "airtable",
+    "name": "Airtable",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "no spec found"
+   }
+  ]
+ },
+ {
+  "file": "data/pass2_v1_drop.jsonl",
+  "overall": {
+   "correct": 178,
+   "total": 199,
+   "accuracy": 0.8945
+  },
+  "per_field": {
+   "one_liner": {
+    "correct": 20,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 1.0
+   },
+   "auth_methods": {
+    "correct": 20,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 1.0
+   },
+   "access_tier": {
+    "correct": 18,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 0.9
+   },
+   "delivery": {
+    "correct": 20,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 1.0
+   },
+   "api_styles": {
+    "correct": 19,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 0.95
+   },
+   "api_breadth": {
+    "correct": 17,
+    "total": 19,
+    "answered": 18,
+    "accuracy": 0.8947
+   },
+   "openapi_spec": {
+    "correct": 11,
+    "total": 20,
+    "answered": 11,
+    "accuracy": 0.55
+   },
+   "official_mcp": {
+    "correct": 17,
+    "total": 20,
+    "answered": 18,
+    "accuracy": 0.85
+   },
+   "buildability": {
+    "correct": 18,
+    "total": 20,
+    "answered": 19,
+    "accuracy": 0.9
+   },
+   "main_blocker": {
+    "correct": 18,
+    "total": 20,
+    "answered": 19,
+    "accuracy": 0.9
+   }
+  },
+  "misses": [
+   {
+    "app": "otter-ai",
+    "name": "Otter AI",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/36130822688279",
+    "note": "no spec found"
+   },
+   {
+    "app": "youtube-transcript",
+    "name": "YouTube Transcript",
+    "field": "api_breadth",
+    "pred": "narrow",
+    "truth": [
+     "medium"
+    ],
+    "evidence_url": "https://transcriptapi.com/docs/api",
+    "note": "13 endpoints listed"
+   },
+   {
+    "app": "copper",
+    "name": "Copper",
+    "field": "api_breadth",
+    "pred": "unknown",
+    "truth": [
+     "medium",
+     "broad"
+    ],
+    "evidence_url": "https://developer.copper.com",
+    "note": "14 resource groups, ~90 operation pages"
+   },
+   {
+    "app": "copper",
+    "name": "Copper",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "https://developer.copper.com",
+    "note": "Postman collection only"
+   },
+   {
+    "app": "zoho-crm",
+    "name": "Zoho CRM",
+    "field": "official_mcp",
+    "pred": "unknown",
+    "truth": [
+     "True"
+    ],
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+    "note": ""
+   },
+   {
+    "app": "discord",
+    "name": "Discord",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "True"
+    ],
+    "evidence_url": "https://github.com/discord/discord-api-spec",
+    "note": ""
+   },
+   {
+    "app": "discord",
+    "name": "Discord",
+    "field": "official_mcp",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "none found on vendor docs"
+   },
+   {
+    "app": "whatsapp-business",
+    "name": "WhatsApp Business",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "True"
+    ],
+    "evidence_url": "https://github.com/meta/openapi",
+    "note": ""
+   },
+   {
+    "app": "mrscraper",
+    "name": "MrScraper",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "no spec found"
+   },
+   {
+    "app": "sentry",
+    "name": "Sentry",
+    "field": "access_tier",
+    "pred": "self_serve_free",
+    "truth": [
+     "paid_plan",
+     "self_serve_trial"
+    ],
+    "evidence_url": "https://sentry.io/pricing/",
+    "note": "Developer (free) plan table: 'API | No'; Team plan first with API"
+   },
+   {
+    "app": "sentry",
+    "name": "Sentry",
+    "field": "buildability",
+    "pred": "ready",
+    "truth": [
+     "ready_with_friction",
+     "blocked"
+    ],
+    "evidence_url": "",
+    "note": "API needs Team plan"
+   },
+   {
+    "app": "sentry",
+    "name": "Sentry",
+    "field": "main_blocker",
+    "pred": "none",
+    "truth": [
+     "paid_plan_required"
+    ],
+    "evidence_url": "",
+    "note": ""
+   },
+   {
+    "app": "amazon-selling-partner",
+    "name": "Amazon Selling Partner",
+    "field": "access_tier",
+    "pred": "self_serve_free",
+    "truth": [
+     "admin_approval",
+     "paid_plan",
+     "partner_gated"
+    ],
+    "evidence_url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+    "note": "'Only Professional Selling Accounts can register'; developer profile reviewed"
+   },
+   {
+    "app": "quickbooks",
+    "name": "QuickBooks",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "no spec found"
+   },
+   {
+    "app": "quickbooks",
+    "name": "QuickBooks",
+    "field": "official_mcp",
+    "pred": false,
+    "truth": [
+     "True"
+    ],
+    "evidence_url": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "note": ""
+   },
+   {
+    "app": "google-ads",
+    "name": "Google Ads",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "discovery document, not OpenAPI"
+   },
+   {
+    "app": "google-ads",
+    "name": "Google Ads",
+    "field": "buildability",
+    "pred": "unknown",
+    "truth": [
+     "ready_with_friction"
+    ],
+    "evidence_url": "",
+    "note": ""
+   },
+   {
+    "app": "google-ads",
+    "name": "Google Ads",
+    "field": "main_blocker",
+    "pred": "unknown",
+    "truth": [
+     "app_review_or_approval"
+    ],
+    "evidence_url": "",
+    "note": ""
+   },
+   {
+    "app": "airtable",
+    "name": "Airtable",
+    "field": "api_styles",
+    "pred": [
+     "rest",
+     "websocket"
+    ],
+    "truth": {
+     "req": [
+      "rest"
+     ],
+     "allow": []
+    },
+    "evidence_url": "https://airtable.com/developers/web/api/introduction",
+    "note": "webhooks are HTTP callbacks, not WebSocket"
+   },
+   {
+    "app": "airtable",
+    "name": "Airtable",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "no spec found"
+   },
+   {
+    "app": "harvest",
+    "name": "Harvest",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "no spec found"
+   }
+  ]
+ },
+ {
+  "file": "data/pass2.jsonl",
+  "overall": {
+   "correct": 183,
+   "total": 199,
+   "accuracy": 0.9196
+  },
+  "per_field": {
+   "one_liner": {
+    "correct": 20,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 1.0
+   },
+   "auth_methods": {
+    "correct": 20,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 1.0
+   },
+   "access_tier": {
+    "correct": 18,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 0.9
+   },
+   "delivery": {
+    "correct": 20,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 1.0
+   },
+   "api_styles": {
+    "correct": 19,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 0.95
+   },
+   "api_breadth": {
+    "correct": 18,
+    "total": 19,
+    "answered": 19,
+    "accuracy": 0.9474
+   },
+   "openapi_spec": {
+    "correct": 13,
+    "total": 20,
+    "answered": 13,
+    "accuracy": 0.65
+   },
+   "official_mcp": {
+    "correct": 17,
+    "total": 20,
+    "answered": 18,
+    "accuracy": 0.85
+   },
+   "buildability": {
+    "correct": 19,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 0.95
+   },
+   "main_blocker": {
+    "correct": 19,
+    "total": 20,
+    "answered": 20,
+    "accuracy": 0.95
+   }
+  },
+  "misses": [
+   {
+    "app": "otter-ai",
+    "name": "Otter AI",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/36130822688279",
+    "note": "no spec found"
+   },
+   {
+    "app": "youtube-transcript",
+    "name": "YouTube Transcript",
+    "field": "api_breadth",
+    "pred": "narrow",
+    "truth": [
+     "medium"
+    ],
+    "evidence_url": "https://transcriptapi.com/docs/api",
+    "note": "13 endpoints listed"
+   },
+   {
+    "app": "copper",
+    "name": "Copper",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "https://developer.copper.com",
+    "note": "Postman collection only"
+   },
+   {
+    "app": "zoho-crm",
+    "name": "Zoho CRM",
+    "field": "official_mcp",
+    "pred": "unknown",
+    "truth": [
+     "True"
+    ],
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+    "note": ""
+   },
+   {
+    "app": "discord",
+    "name": "Discord",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "True"
+    ],
+    "evidence_url": "https://github.com/discord/discord-api-spec",
+    "note": ""
+   },
+   {
+    "app": "discord",
+    "name": "Discord",
+    "field": "official_mcp",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "none found on vendor docs"
+   },
+   {
+    "app": "mrscraper",
+    "name": "MrScraper",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "no spec found"
+   },
+   {
+    "app": "sentry",
+    "name": "Sentry",
+    "field": "access_tier",
+    "pred": "self_serve_free",
+    "truth": [
+     "paid_plan",
+     "self_serve_trial"
+    ],
+    "evidence_url": "https://sentry.io/pricing/",
+    "note": "Developer (free) plan table: 'API | No'; Team plan first with API"
+   },
+   {
+    "app": "sentry",
+    "name": "Sentry",
+    "field": "buildability",
+    "pred": "ready",
+    "truth": [
+     "ready_with_friction",
+     "blocked"
+    ],
+    "evidence_url": "",
+    "note": "API needs Team plan"
+   },
+   {
+    "app": "sentry",
+    "name": "Sentry",
+    "field": "main_blocker",
+    "pred": "none",
+    "truth": [
+     "paid_plan_required"
+    ],
+    "evidence_url": "",
+    "note": ""
+   },
+   {
+    "app": "amazon-selling-partner",
+    "name": "Amazon Selling Partner",
+    "field": "access_tier",
+    "pred": "self_serve_free",
+    "truth": [
+     "admin_approval",
+     "paid_plan",
+     "partner_gated"
+    ],
+    "evidence_url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+    "note": "'Only Professional Selling Accounts can register'; developer profile reviewed"
+   },
+   {
+    "app": "quickbooks",
+    "name": "QuickBooks",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "no spec found"
+   },
+   {
+    "app": "quickbooks",
+    "name": "QuickBooks",
+    "field": "official_mcp",
+    "pred": false,
+    "truth": [
+     "True"
+    ],
+    "evidence_url": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "note": ""
+   },
+   {
+    "app": "google-ads",
+    "name": "Google Ads",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "discovery document, not OpenAPI"
+   },
+   {
+    "app": "airtable",
+    "name": "Airtable",
+    "field": "api_styles",
+    "pred": [
+     "rest",
+     "websocket"
+    ],
+    "truth": {
+     "req": [
+      "rest"
+     ],
+     "allow": []
+    },
+    "evidence_url": "https://airtable.com/developers/web/api/introduction",
+    "note": "webhooks are HTTP callbacks, not WebSocket"
+   },
+   {
+    "app": "airtable",
+    "name": "Airtable",
+    "field": "openapi_spec",
+    "pred": "unknown",
+    "truth": [
+     "False"
+    ],
+    "evidence_url": "",
+    "note": "no spec found"
+   }
+  ]
+ }
+]

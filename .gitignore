@@ -1,0 +1,15 @@
+.venv/
+.env
+cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# scraped vendor page texts and run logs stay local: rerun discovery to regenerate
+data/pages/
+data/run_*.log
+data/pass1_groq.jsonl
+data/pass1_offblock.jsonl
+data/pilot_v0.jsonl
+data/pass1.jsonl
+data/custom_*.jsonl

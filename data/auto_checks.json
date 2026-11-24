@@ -1,0 +1,3958 @@
+{
+ "salesforce": {
+  "n": 1,
+  "name": "Salesforce",
+  "flags": [
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://www.salesforce.com/blog/what-does-salesforce-do"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.argushq/enforcement-database",
+    "ai.cirra/salesforce-mcp",
+    "ai.smithery/kodey-ai-salesforce-mcp",
+    "ai.smithery/kodey-ai-salesforce-mcp-kodey",
+    "ai.smithery/kodey-ai-salesforce-mcp-minimal",
+    "ai.smithery/kodey-ai-salesforce-mcp-server",
+    "ai.taskforcehq/taskforce",
+    "ai.workforcegpt/workforcegpt",
+    "cloud.serpent/salesforce-devops",
+    "com.devart/mcp-salesforce",
+    "com.devart/mcp-salesforcemc",
+    "com.fincraftly/workforce",
+    "com.forcedalpha/supply-chain",
+    "com.forcefieldsilicon/mdengine",
+    "com.modevc/firm-salesforce-ventures"
+   ]
+  },
+  "composio_toolkits": [
+   "salesforce",
+   "salesforce_data_360",
+   "salesforce_service_cloud"
+  ]
+ },
+ "hubspot": {
+  "n": 2,
+  "name": "HubSpot",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://developers.hubspot.com/ai-tools/mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.edgethirteen.www/hubspot-dbv",
+    "com.pronovahq/pronova-sales-hubspot",
+    "dev.wirecat/hubspot-cli",
+    "io.github.Centrify-Internal/hubspot-integrations-mcp",
+    "io.github.M-Pineapple/hubspot-auditor",
+    "io.github.Servosity/hubspot-mcp",
+    "io.github.danielpopamd/hubspot-mcp",
+    "io.github.mindstone/mcp-server-hubspot",
+    "io.github.mrfentmen/hubspot-mcp",
+    "io.github.ohneben/hubspot-mcp",
+    "io.github.pipeworx-io/hubspot"
+   ]
+  },
+  "composio_toolkits": [
+   "hubspot"
+  ]
+ },
+ "pipedrive": {
+  "n": 3,
+  "name": "Pipedrive",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.pipedrive.com"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.pipedrive.com/docs/api/v1/Activities"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://www.pipedrive.com/en/newsroom/pipedrive-mcp-connector-is-now-available-in-claudes-official-marketplace"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "io.github.Servosity/pipedrive-mcp",
+    "io.github.ckalima/pipedrive-mcp-server",
+    "io.github.mmedum/pipedrive-mcp",
+    "io.github.nubiia-dev/mcp-pipedrive",
+    "io.github.pipeworx-io/pipedrive",
+    "io.usefulapi/pipedrive"
+   ]
+  },
+  "composio_toolkits": [
+   "pipedrive"
+  ]
+ },
+ "attio": {
+  "n": 4,
+  "name": "Attio",
+  "flags": [
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://attio.com/platform/mcp/llms.txt"
+   },
+   {
+    "field": "official_mcp",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://attio.com/mcp"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://attio.com/mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.smithery/kaszek-kaszek-attio-mcp",
+    "ai.smithery/kesslerio-attio-mcp-server",
+    "ai.smithery/kesslerio-attio-mcp-server-beta",
+    "dev.wirecat/attio-cli",
+    "io.github.kesslerio/attio-mcp-server"
+   ]
+  },
+  "composio_toolkits": [
+   "attio"
+  ]
+ },
+ "twenty": {
+  "n": 5,
+  "name": "Twenty",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.twenty.com/user-guide/ai/capabilities/mcp"
+   },
+   {
+    "field": "main_blocker",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://twenty.com/pricing"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://docs.twenty.com/user-guide/ai/capabilities/mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.twentyclubs.mcp/premier-league",
+    "io.github.21-million-wall/twentyone-million",
+    "io.github.h3692/eightytwenty",
+    "io.usefulapi/twenty"
+   ]
+  },
+  "composio_toolkits": [
+   "twenty"
+  ]
+ },
+ "podio": {
+  "n": 6,
+  "name": "Podio",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.podio.com/authentication/server_side"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.podio.com/doc"
+   },
+   {
+    "field": "official_mcp",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "error",
+    "detail": "agent says official MCP; not in registry; evidence https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": []
+  },
+  "composio_toolkits": [
+   "podio"
+  ]
+ },
+ "zoho-crm": {
+  "n": 7,
+  "name": "Zoho CRM",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'Learn how to request specific resources, fields of the resources and relationships of the '"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://www.zoho.com/crm/developer/docs"
+   },
+   {
+    "field": "openapi_spec",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://www.zoho.com/crm/developer/docs/api/v8/api-collection.html"
+   },
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "main_blocker",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://www.zoho.com/crm/developer/docs/api/v8/client-credentials.html"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.devart/mcp-zohocrm",
+    "com.devart/mcp-zohodesk",
+    "io.github.asklokesh/zoho-crm-mcp-server",
+    "io.github.pipeworx-io/zoho_crm",
+    "io.github.princezoho/tangylimes"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "close": {
+  "n": 8,
+  "name": "Close",
+  "flags": [],
+  "mcp": {
+   "registry_official": [
+    "com.close/close-mcp"
+   ],
+   "registry_community": [
+    "ai.salescloser/salescloser",
+    "city.close/close-api",
+    "com.atlasclose/demo",
+    "com.closedmcp/closedmcp",
+    "com.closefinch/closefinch",
+    "com.disclosedby/record",
+    "com.getcloseknit/close-knit",
+    "com.greenercloset/greener-closet",
+    "com.modevc/chart-open-source-vs-closed-ai-models-gap",
+    "com.pclosets/closets",
+    "com.repclose/repclose",
+    "com.sigmaclose/server",
+    "com.virtualcloser/virtual-closer",
+    "io.github.Evozim/b2b-lead-closer-mcp",
+    "io.github.Evozim/salescloser-ai"
+   ]
+  },
+  "composio_toolkits": [
+   "close",
+   "close_mcp"
+  ]
+ },
+ "copper": {
+  "n": 9,
+  "name": "Copper",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'For PUT or POST requests (e.g. create, update, search), the request parameters must be pro'"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://copper.com"
+   },
+   {
+    "field": "main_blocker",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://www.copper.com/pricing"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://www.copper.com/mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "dev.cotlet/copper-crm",
+    "io.github.copperline-labs/rendex-mcp",
+    "io.github.kurpeeren/copperflow",
+    "io.usefulapi/copper"
+   ]
+  },
+  "composio_toolkits": [
+   "copper"
+  ]
+ },
+ "dealcloud": {
+  "n": 10,
+  "name": "DealCloud",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: 'Drive smarter origination, stronger execution, and faster growth firmwide with AI-driven i'"
+   },
+   {
+    "field": "main_blocker",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in http://dealcloud.com"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://api.docs.dealcloud.com/releases"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": []
+  },
+  "composio_toolkits": []
+ },
+ "zendesk": {
+  "n": 11,
+  "name": "Zendesk",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developer.zendesk.com/api-reference/introduction/introduction"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'This is the reference documentation for the Zendesk APIs. The topics in the introduction c'"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://support.zendesk.com/hc/en-us/articles/10497779528730-Using-the-Zendesk-MCP-client-to-access-MCP-tools-in-action-flows-and-advanced-action-flows"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.swifteq/zendesk-mcp-server",
+    "dev.cotlet/zendesk",
+    "io.github.fruggr/zendesk-mcp-server",
+    "io.github.markusvankempen/zendesk-mcp",
+    "io.github.michaelrice/zendesk-mcp",
+    "io.github.mindstone/mcp-server-zendesk",
+    "io.github.pipeworx-io/zendesk",
+    "io.usefulapi/zendesk"
+   ]
+  },
+  "composio_toolkits": [
+   "zendesk"
+  ]
+ },
+ "intercom": {
+  "n": 12,
+  "name": "Intercom",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'This API reference is auto-generated from an OpenAPI specification. It is also interactive'"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://developers.intercom.com/docs/guides/mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "io.github.MuhammadTalhaMT/intercom",
+    "io.github.iambashar/agent-intercom",
+    "io.github.pipeworx-io/intercom"
+   ]
+  },
+  "composio_toolkits": [
+   "intercom",
+   "intercom_mcp"
+  ]
+ },
+ "freshdesk": {
+  "n": 13,
+  "name": "Freshdesk",
+  "flags": [
+   {
+    "field": "delivery",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.freshdesk.com/api"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'Create a Ticket  /api/v2/tickets'"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.freshdesk.com/api"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "io.github.WYRE-AI/freshdesk-mcp",
+    "io.github.mindstone/mcp-server-freshdesk",
+    "io.github.mrfentmen/freshdesk-mcp",
+    "io.github.pipeworx-io/freshdesk",
+    "io.github.wyre-technology/freshdesk-mcp",
+    "io.usefulapi/freshdesk"
+   ]
+  },
+  "composio_toolkits": [
+   "freshdesk"
+  ]
+ },
+ "front": {
+  "n": 14,
+  "name": "Front",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://front.com/pricing"
+   },
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://front.com/pricing"
+   },
+   {
+    "field": "main_blocker",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://front.com/pricing"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.clize/storefront",
+    "ai.frontierdesk/desk",
+    "ai.frontmost/frontmost-ai",
+    "ai.servicefront/front-desk",
+    "app.frontierstack/frontierstack",
+    "app.simfuse/esim-storefront",
+    "co.frontierresearch/frontier",
+    "co.pressfront/trace",
+    "com.25karats/storefront",
+    "com.a2awire/data-hacker-news-front-page-tech-news",
+    "com.amfionhq/front-desk-setup",
+    "com.dianarafael/storefront",
+    "com.frontdeskreview/front-desk-review-data",
+    "com.fronterasignal/frontera-signal",
+    "com.frontic/ui"
+   ]
+  },
+  "composio_toolkits": [
+   "front"
+  ]
+ },
+ "pylon": {
+  "n": 15,
+  "name": "Pylon",
+  "flags": [
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.usepylon.com/pylon-docs/developer/api/api-reference"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://docs.usepylon.com/pylon-docs/integrations/codebase/mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "io.github.JustinBeckwith/pylon-mcp",
+    "io.pylonseo/pylon-seo"
+   ]
+  },
+  "composio_toolkits": [
+   "pylon_mcp"
+  ]
+ },
+ "liveagent": {
+  "n": 16,
+  "name": "LiveAgent",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://support.liveagent.com/647358-MCP-Integration-for-Agents"
+   },
+   {
+    "field": "api_styles",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://support.liveagent.com/066804-LiveAgent-API"
+   },
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://www.liveagent.com/pricing"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://support.liveagent.com/647358-MCP-Integration-for-Agents"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": []
+  },
+  "composio_toolkits": []
+ },
+ "plain": {
+  "n": 17,
+  "name": "Plain",
+  "flags": [
+   {
+    "field": "delivery",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://www.plain.com/docs/graphql/introduction"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "com.plain/mcp"
+   ],
+   "registry_community": [
+    "ai.livecore/voiceover-tts-dubbing-translate-lip-sync-audio-music-sfx-silence-ffmpeg-remotion-capcut-descript-opus-premiere-after-effects-ugc-faceless-explainer-promo-montage-thumbnail-watermark-blur",
+    "ai.plainvoice/mcp",
+    "ai.smithery/plainyogurt21-clintrials-mcp",
+    "ai.smithery/plainyogurt21-sec-edgar-mcp",
+    "app.vercel.automaton-tx-explainer/base-tools",
+    "com.autosecurelogin/colorado-complaint-access",
+    "com.gumballtools/regex-explainer",
+    "com.keepplain/keepplain",
+    "com.plainerror/plainerror",
+    "com.plainfreight/quotes",
+    "com.plainquant/plainquant",
+    "com.plainradar/news",
+    "com.plainrecordlabs/cancelled-us-trademarks",
+    "com.plainrecordlabs/company-jobs-feed",
+    "com.plainrecordlabs/docs-to-markdown"
+   ]
+  },
+  "composio_toolkits": [
+   "plain",
+   "plain_mcp"
+  ]
+ },
+ "help-scout": {
+  "n": 18,
+  "name": "Help Scout",
+  "flags": [
+   {
+    "field": "delivery",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.helpscout.com/article/1140-mailbox-api"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.helpwell/helpwell",
+    "ai.inbrix/helpdesk",
+    "br.com.ihelpu.seminovos/marketplace",
+    "chat.conecto/help-desk",
+    "com.agenthelpnetwork/agent-help-network",
+    "com.aineedhelpfromotherai/reasoning-commons",
+    "com.autodesk.aps.api/product-help-mcp",
+    "com.autosecurelogin/homelesshelper",
+    "com.braincloudservers/braincloud-mcp-helper",
+    "com.canhelpto/support",
+    "com.choosehelp/directory",
+    "com.emeditor/help",
+    "com.gettreatmenthelp/gettreatmenthelp",
+    "com.handlediq/find-help",
+    "com.helpforsupport/caisey"
+   ]
+  },
+  "composio_toolkits": [
+   "help_scout"
+  ]
+ },
+ "gorgias": {
+  "n": 19,
+  "name": "Gorgias",
+  "flags": [
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "dev.cotlet/gorgias"
+   ]
+  },
+  "composio_toolkits": [
+   "gorgias"
+  ]
+ },
+ "gladly": {
+  "n": 20,
+  "name": "Gladly",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developer.gladly.com/rest"
+   },
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: 'API tokens are required to use Gladly APIs for security and authentication purposes. Token'"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'The Gladly Chat API enables you to have programmatic control of the Gladly Chat.'"
+   },
+   {
+    "field": "openapi_spec",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developer.gladly.com/rest"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "dev.cotlet/gladly",
+    "io.usefulapi/gladly"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "slack": {
+  "n": 21,
+  "name": "Slack",
+  "flags": [
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://slack.com/help/articles/48855576908307-Guide-to-MCP-in-Slack"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.smithery/smithery-ai-slack",
+    "ai.wakeshift/slackline",
+    "ai.waystation/slack",
+    "co.civai.nova/mcp-slack_android",
+    "com.insightfulpipe/slack",
+    "com.mcparmory/slack",
+    "com.pulsemcp/slack",
+    "io.github.CSOAI-ORG/slack-enterprise-mcp",
+    "io.github.Th3Slack3r/slacking-biz",
+    "io.github.Th3Slack3r/urflrealtor-mcp",
+    "io.github.aaronsb/slack-mcp",
+    "io.github.adelaidasofia/slack-mcp",
+    "io.github.crunchtools/slack",
+    "io.github.fastslack/e2e-runner",
+    "io.github.jtalk22/slack-mcp-server"
+   ]
+  },
+  "composio_toolkits": [
+   "slack"
+  ]
+ },
+ "twilio": {
+  "n": 22,
+  "name": "Twilio",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://www.twilio.com/docs/iam/api"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://www.twilio.com/en-us/blog/developers/introducing-twilio-mcp-skills"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "io.github.codespar/mcp-twilio",
+    "io.github.mrfentmen/twilio-mcp-server",
+    "io.github.pipeworx-io/twilio"
+   ]
+  },
+  "composio_toolkits": [
+   "twilio"
+  ]
+ },
+ "zoho-cliq": {
+  "n": 23,
+  "name": "Zoho Cliq",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "main_blocker",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://www.zoho.com/cliq/pricing.html?src=en"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://www.zoho.com/cliq/mcp-server.html"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.devart/mcp-zohocrm",
+    "com.devart/mcp-zohodesk",
+    "io.github.asklokesh/zoho-crm-mcp-server",
+    "io.github.pipeworx-io/zoho_crm",
+    "io.github.princezoho/tangylimes"
+   ]
+  },
+  "composio_toolkits": [
+   "zoho_cliq"
+  ]
+ },
+ "lark-larksuite": {
+  "n": 24,
+  "name": "Lark (Larksuite)",
+  "flags": [
+   {
+    "field": "delivery",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://open.larksuite.com/document/common-capabilities/sso/api/obtain-oauth-code"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'Event subscription mode Receive events through persistent connection Send events to develo'"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_introduction"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.meetlark/mcp-server",
+    "com.cuelark/tools",
+    "com.larkella/larkella",
+    "com.splark/splark",
+    "dev.workers.cybermax-tools.cybermax/logolark",
+    "io.github.EthanQC/feishu-user-plugin",
+    "io.github.brandonclark1996-design/toolrank",
+    "io.github.clarkthomas/clearlot",
+    "io.github.cyuanxv/feishu-mcp-standalone",
+    "io.github.devon-clarkk/engraphy",
+    "io.github.getlarkwright/aiops-field-notes-mcp",
+    "io.github.getlarkwright/netip-mcp",
+    "io.github.getlarkwright/netops-field-notes-mcp",
+    "io.github.getlarkwright/secops-field-notes-mcp",
+    "io.github.guidance-ai/guidance-lark-mcp"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "pumble": {
+  "n": 25,
+  "name": "Pumble",
+  "flags": [
+   {
+    "field": "delivery",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://pumble.com/learn/pumble/ai-automation-guide"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'Creating new channels via standard POST requests'"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://pumble.com/learn/pumble/ai-automation-guide"
+   },
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://pumble.com/learn/pumble/ai-automation-guide"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://pumble.com/learn/pumble/ai-automation-guide"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": []
+  },
+  "composio_toolkits": [
+   "pumble"
+  ]
+ },
+ "discord": {
+  "n": 26,
+  "name": "Discord",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://discord.com/developers/docs/reference"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.discord.com/developers/topics/oauth2"
+   },
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.agentapigate/telegram-discord-twitch-kick-medium-pinterest-mcp",
+    "ai.agentapihub/telegram-discord-twitch-kick-medium-pinterest-mcp",
+    "ai.smithery/Danushkumar-V-mcp-discord",
+    "ai.smithery/sachicali-discordmcp-suite",
+    "app.lasers.guildcontrol/discord",
+    "com.discordservers/search",
+    "com.discordtimestampgen/discord-timestamp",
+    "com.discortics/discord-bot",
+    "dev.cotlet/discord",
+    "io.disdex/discord-servers",
+    "io.github.DasRed/discord-mcp",
+    "io.github.DockerDiscordControl/timergy",
+    "io.github.Oratorian/discord-node-mcp",
+    "io.github.OrygnsCode/discord-mcp",
+    "io.github.PaSympa/discord-mcp"
+   ]
+  },
+  "composio_toolkits": [
+   "discord"
+  ]
+ },
+ "telegram": {
+  "n": 27,
+  "name": "Telegram",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'Try our Telegram Database Library (or simply TDLib), a tool for third-party developers tha'"
+   },
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.agentapigate/telegram-discord-twitch-kick-medium-pinterest-mcp",
+    "ai.agentapihub/telegram-discord-twitch-kick-medium-pinterest-mcp",
+    "ai.awraiter/telegram",
+    "co.civai.nova/telegram-agent",
+    "com.insightfulpipe/telegram",
+    "com.jojapi/telegram",
+    "com.limzo/telegram-group-stats",
+    "com.sendseven/whatsapp-instagram-telegram-sms-messenger-email",
+    "com.telegramtometatrader/ttmt",
+    "dev.1social/telegram",
+    "io.github.AndreySukhanov/summarix-telegram",
+    "io.github.AnshumanAtrey/telegram-channel-scraper",
+    "io.github.ChatPush/whatsapp-telegram-max-sms",
+    "io.github.GeiserX/telegram-archive-mcp",
+    "io.github.GhostPawJS/telegram"
+   ]
+  },
+  "composio_toolkits": [
+   "telegram"
+  ]
+ },
+ "whatsapp-business": {
+  "n": 28,
+  "name": "WhatsApp Business",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://business.whatsapp.com/whatsapp-vs-whatsapp-business"
+   },
+   {
+    "field": "openapi_spec",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.facebook.com/documentation/business-messaging/whatsapp/reference/whatsapp-business-phone-number/whatsapp-business-qr-code-api"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://developers.facebook.com/documentation/mcp/whatsapp-business-tools-mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.adlio/meta-ads",
+    "ai.adweave/meta-ads-mcp",
+    "ai.agentapigate/facebook-meta-google-tiktok-ads-library-api-mcp",
+    "ai.agentapihub/facebook-meta-google-tiktok-ads-library-api-mcp",
+    "ai.darkfunnels/whatsapp-sales-agent",
+    "ai.fastmetal/fastmetal",
+    "ai.izap/whatsapp",
+    "ai.livingmeta/ai-in-research",
+    "ai.lumeta/lumeta",
+    "ai.metabind/banking-assistant",
+    "ai.metabind/docs",
+    "ai.metaday/ryan",
+    "ai.primeta/primeta",
+    "ai.smithery/samihalawa-whatsapp-go-mcp",
+    "app.adchat/meta-ads"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "aircall": {
+  "n": 29,
+  "name": "Aircall",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://aircall.io/pricing"
+   },
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: 'Full API access'"
+   },
+   {
+    "field": "official_mcp",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developer.aircall.io/docs/introduction"
+   },
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://aircall.io/pricing"
+   },
+   {
+    "field": "main_blocker",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://aircall.io/pricing"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "dev.cotlet/aircall",
+    "io.usefulapi/aircall"
+   ]
+  },
+  "composio_toolkits": [
+   "aircall"
+  ]
+ },
+ "vonage": {
+  "n": 30,
+  "name": "Vonage",
+  "flags": [
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developer.vonage.com"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "io.github.Vonage/vonage-documentation-mcp"
+   ],
+   "registry_community": []
+  },
+  "composio_toolkits": []
+ },
+ "google-ads": {
+  "n": 31,
+  "name": "Google Ads",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: 'Most new developers who sign for the Google Ads API will immediately be given Explorer Acc'"
+   },
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.google.com/ads/blog/posts/2025/10/explorer-access-is-now-available-for"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://developers.google.com/google-ads/api/reference/rpc/v26/overview"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "academy.mycontent/google-ads",
+    "ai.adplane/google-ads",
+    "ai.adramp/google-ads",
+    "ai.agentapigate/facebook-meta-google-tiktok-ads-library-api-mcp",
+    "ai.agentapigate/google-maps-places-business-app-reviews-mcp",
+    "ai.agentapigate/google-serp-web-scraping-domain-search-mcp",
+    "ai.agentapigate/google-trends-seo-keywords-serp-search-mcp",
+    "ai.agentapihub/facebook-meta-google-tiktok-ads-library-api-mcp",
+    "ai.agentapihub/google-maps-places-business-app-reviews-mcp",
+    "ai.agentapihub/google-serp-web-scraping-domain-search-mcp",
+    "ai.agentapihub/google-trends-seo-keywords-serp-search-mcp",
+    "ai.b77/google-ads",
+    "ai.b77/google-news",
+    "ai.b77/google-search-console",
+    "ai.getvda/google-oauth-credential-service"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "meta-ads": {
+  "n": 32,
+  "name": "Meta Ads",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: 'This Ads API request is not allowed for apps with development access level (Development ac'"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'This is a full list of root nodes for the Facebook Marketing API with links to reference d'"
+   },
+   {
+    "field": "official_mcp",
+    "check": "support",
+    "severity": "error",
+    "detail": "quote does not mention official mcp: \"we're announcing Meta ads AI connectors in open beta — built for businesses of all sizes a\""
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://business.meta.com/news/meta-ads-ai-connectors"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.adlio/meta-ads",
+    "ai.adweave/meta-ads-mcp",
+    "ai.agentapigate/facebook-meta-google-tiktok-ads-library-api-mcp",
+    "ai.agentapihub/facebook-meta-google-tiktok-ads-library-api-mcp",
+    "ai.fastmetal/fastmetal",
+    "ai.livingmeta/ai-in-research",
+    "ai.lumeta/lumeta",
+    "ai.metabind/banking-assistant",
+    "ai.metabind/docs",
+    "ai.metaday/ryan",
+    "ai.primeta/primeta",
+    "app.adchat/meta-ads",
+    "app.metadock/metadock",
+    "app.nametagstudio/nametag-studio",
+    "app.roaz/meta-ads"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "linkedin-ads": {
+  "n": 33,
+  "name": "LinkedIn Ads",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access"
+   },
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.agentapigate/linkedin-company-b2b-business-profile-mcp",
+    "ai.agentapigate/threads-instagram-truthsocial-linkedin-posts-mcp",
+    "ai.agentapihub/linkedin-company-b2b-business-profile-mcp",
+    "ai.agentapihub/threads-instagram-truthsocial-linkedin-posts-mcp",
+    "ai.com.mcp/linkedin",
+    "app.fluxgraph/linkedin",
+    "app.theona/linkedin-content-planner",
+    "click.myagents/microsoft-ads",
+    "co.quibbly/linkedin-inbox",
+    "com.a2awire/data-microsoft-research-ai-research-blog",
+    "com.a2awire/data-windows-security-update-microsoft-cvrf",
+    "com.adpeekly/linkedin-ads-library",
+    "com.b2bprofileapi/linkedin-company-people-b2b-mcp",
+    "com.b2bprofileapi/linkedin-profile-company-b2b-enrichment-mcp",
+    "com.b2bprofileapi/x402-linkedin-profile-company-b2b-mcp"
+   ]
+  },
+  "composio_toolkits": [
+   "linkedin_ads"
+  ]
+ },
+ "gohighlevel": {
+  "n": 34,
+  "name": "GoHighLevel",
+  "flags": [
+   {
+    "field": "delivery",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://marketplace.gohighlevel.com/docs"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server"
+   },
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://www.gohighlevel.com/pricing"
+   },
+   {
+    "field": "main_blocker",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://www.gohighlevel.com/pricing"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.makebox.mcp/gohighlevel",
+    "app.ghlmcp/highlevel-agency-mcp",
+    "com.ghlagencymcp/highlevel-agency-mcp",
+    "dev.cotlet/gohighlevel",
+    "dev.ghlmcp/highlevel-agency-mcp",
+    "io.github.mooshee/highlevel-agency-mcp"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "mailchimp": {
+  "n": 35,
+  "name": "Mailchimp",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://mailchimp.com/developer/marketing/api-concepts/authentication"
+   },
+   {
+    "field": "access_tier",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://mailchimp.com/developer/integration-partner-program"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.insightfulpipe/mailchimp",
+    "io.github.asklokesh/mailchimp-mcp-server",
+    "io.github.cyanheads/mailchimp-mcp-server",
+    "io.github.mrfentmen/mailchimp-mcp",
+    "io.github.pipeworx-io/mailchimp",
+    "io.usefulapi/mailchimp"
+   ]
+  },
+  "composio_toolkits": [
+   "mailchimp"
+  ]
+ },
+ "klaviyo": {
+  "n": 36,
+  "name": "Klaviyo",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.klaviyo.com/en/reference/api_overview"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: \"Klaviyo's modern APIs offer powerful functionality via the `relationships` object, a thoro\""
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://developers.klaviyo.com"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.insightfulpipe/klaviyo",
+    "com.mcparmory/klaviyo",
+    "io.github.mrfentmen/klaviyo-mcp",
+    "io.github.pipeworx-io/klaviyo",
+    "io.scalably/klaviyo-mcp"
+   ]
+  },
+  "composio_toolkits": [
+   "klaviyo"
+  ]
+ },
+ "systeme-io": {
+  "n": 37,
+  "name": "systeme.io",
+  "flags": [
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "dev.cotlet/systeme-io"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "pinterest": {
+  "n": 38,
+  "name": "Pinterest",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization"
+   },
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: 'First, Register your app. Then, find your app ID and client secret.'"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'POST Create Pin\\nGET List Pins\\nGET Get multiple Pin analytics\\nGET Get Pin'"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://developers.pinterest.com/about-pinterest-mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.agentapigate/sec-edgar-crypto-real-estate-pinterest-mcp",
+    "ai.agentapigate/telegram-discord-twitch-kick-medium-pinterest-mcp",
+    "ai.agentapihub/sec-edgar-crypto-real-estate-pinterest-mcp",
+    "ai.agentapihub/telegram-discord-twitch-kick-medium-pinterest-mcp",
+    "com.365pinterest/365-pinterest",
+    "com.getmcpads/pinterest-ads",
+    "com.insightfulpipe/pinterest-ads",
+    "com.insightfulpipe/pinterest-pages",
+    "com.mambabuilt/mcp-pinterest-brand-presence-mapper",
+    "com.pindataapi/pinterest-pins-boards-airbnb-visual-mcp",
+    "com.pindataapi/x402-pinterest-pins-boards-airbnb-mcp",
+    "com.pinpinterest/keywords",
+    "dev.1social/pinterest",
+    "io.github.adkit/pinterest-ads",
+    "io.github.akhilrajesh213/pinterest-trends-scraper"
+   ]
+  },
+  "composio_toolkits": [
+   "pinterest",
+   "pinterest_ads"
+  ]
+ },
+ "threads-meta": {
+  "n": 39,
+  "name": "Threads (Meta)",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: 'Get Started\\nCreate an app\\nGet Access Tokens'"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.facebook.com/documentation/threads/reference"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.adlio/meta-ads",
+    "ai.adweave/meta-ads-mcp",
+    "ai.agentapigate/facebook-meta-google-tiktok-ads-library-api-mcp",
+    "ai.agentapigate/threads-instagram-truthsocial-linkedin-posts-mcp",
+    "ai.agentapihub/facebook-meta-google-tiktok-ads-library-api-mcp",
+    "ai.agentapihub/threads-instagram-truthsocial-linkedin-posts-mcp",
+    "ai.fastmetal/fastmetal",
+    "ai.livingmeta/ai-in-research",
+    "ai.lumeta/lumeta",
+    "ai.metabind/banking-assistant",
+    "ai.metabind/docs",
+    "ai.metaday/ryan",
+    "ai.primeta/primeta",
+    "app.adchat/meta-ads",
+    "app.metadock/metadock"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "sendgrid": {
+  "n": 40,
+  "name": "SendGrid",
+  "flags": [],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "io.github.Choppaaahh/sendgrid-mcp-secure",
+    "io.github.Neschadin/sendgrid-mcp",
+    "io.github.codespar/mcp-sendgrid",
+    "io.github.codespar/mcp-twilio",
+    "io.github.deyikong/sendgrid-mcp",
+    "io.github.mrfentmen/twilio-mcp-server",
+    "io.github.pipeworx-io/sendgrid",
+    "io.github.pipeworx-io/twilio",
+    "io.usefulapi/sendgrid"
+   ]
+  },
+  "composio_toolkits": [
+   "sendgrid"
+  ]
+ },
+ "shopify": {
+  "n": 41,
+  "name": "Shopify",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: \"Learn how to build an app, or customize your storefront. Whether you're just getting start\""
+   },
+   {
+    "field": "auth_methods",
+    "check": "support",
+    "severity": "error",
+    "detail": "'bearer_token' claimed but never mentioned in the official pages read"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://shopify.dev/docs/api/ai-toolkit"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.agentapigate/amazon-product-walmart-shopify-ecommerce-mcp",
+    "ai.agentapihub/amazon-product-walmart-shopify-ecommerce-mcp",
+    "ai.gossiper/shopify-admin-mcp",
+    "app.bestappify/shopify-app-store",
+    "com.b2bprofileapi/b2b-shopify-merchant-company-profile-mcp",
+    "com.hasdata/shopify",
+    "com.insightfulpipe/shopify",
+    "com.mambabuilt/mcp-shopify-app-store-chrome-web-store-listings",
+    "com.mcparmory/shopify-admin",
+    "com.moltlinestudio/shopify",
+    "com.oskivo/shopify",
+    "com.ranovam/shopify-ebay-product-research",
+    "com.rasareka/shopify",
+    "com.shopdataapi/amazon-product-walmart-shopify-mcp",
+    "com.skaidigital/shopify-speed-check"
+   ]
+  },
+  "composio_toolkits": [
+   "shopify"
+  ]
+ },
+ "woocommerce": {
+  "n": 42,
+  "name": "WooCommerce",
+  "flags": [],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.addsynapse/woocommerce",
+    "com.insightfulpipe/woocommerce",
+    "dev.cotlet/woocommerce",
+    "io.github.AmitGurbani/mcp-server-woocommerce",
+    "io.github.fxjima/shopify-woocommerce-store-intelligence",
+    "io.github.pipeworx-io/woocommerce",
+    "io.github.sadrmanesh/woocommerce-mcp",
+    "io.github.wppoland/woocommerce-mcp"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "bigcommerce": {
+  "n": 43,
+  "name": "BigCommerce",
+  "flags": [
+   {
+    "field": "openapi_spec",
+    "check": "support",
+    "severity": "error",
+    "detail": "quote does not mention openapi spec: 'you can import our API specification files into Postman or any other tool that can import '"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://docs.bigcommerce.com/developer/api-reference/mcp/overview"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "io.github.mrfentmen/bigcommerce-mcp"
+   ]
+  },
+  "composio_toolkits": [
+   "bigcommerce"
+  ]
+ },
+ "salesforce-commerce-cloud": {
+  "n": 44,
+  "name": "Salesforce Commerce Cloud",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/oauth.html"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'You are viewing SCAPI documentation. To view the full SCAPI reference specifications in th'"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.cirra/salesforce-mcp",
+    "ai.smithery/kodey-ai-salesforce-mcp",
+    "ai.smithery/kodey-ai-salesforce-mcp-kodey",
+    "ai.smithery/kodey-ai-salesforce-mcp-minimal",
+    "ai.smithery/kodey-ai-salesforce-mcp-server",
+    "cloud.serpent/salesforce-devops",
+    "com.devart/mcp-salesforce",
+    "com.devart/mcp-salesforcemc",
+    "com.modevc/firm-salesforce-ventures",
+    "dev.workers.selbyventurecap.cf-worker/apollo-salesforce-mapper",
+    "io.github.PranavNagrecha/salesforce-intelligence",
+    "io.github.WYRE-AI/salesforce-mcp",
+    "io.github.ZLeventer/salesforce-marketing-mcp",
+    "io.github.aaronsb/salesforce-cloud",
+    "io.github.mindstone/mcp-server-salesforce"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "magento-adobe-commerce": {
+  "n": 45,
+  "name": "Magento (Adobe Commerce)",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "link",
+    "severity": "warn",
+    "detail": "evidence URL unreachable: https://business.adobe.com/blog/how-to/adobe-commerce-developer-ecommerce-website"
+   },
+   {
+    "field": "official_mcp",
+    "check": "link",
+    "severity": "warn",
+    "detail": "evidence URL unreachable: https://business.adobe.com/products/commerce.html"
+   },
+   {
+    "field": "main_blocker",
+    "check": "link",
+    "severity": "warn",
+    "detail": "evidence URL unreachable: https://business.adobe.com/blog/how-to/adobe-commerce-developer-ecommerce-website"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://business.adobe.com/products/commerce.html"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.insightfulpipe/magento",
+    "io.github.AJSMonty/adobe-mcp",
+    "io.github.Nero-Engine/adobe-stock-keyword-generator",
+    "io.github.commentemeapp/adobe-commerce-mcp",
+    "io.github.jigarkkarangiya/adobe-commerce-docs-mcp",
+    "io.github.juan-cinto-infracommerce/magento-cloud",
+    "io.github.michalper/mcp-magento-audit",
+    "io.github.mrfentmen/adobe-font-metrics-mcp",
+    "io.github.mrfentmen/adobe-premiere-mcp",
+    "io.github.zachshallbetter/adobe-mcp-aftereffects",
+    "io.github.zachshallbetter/adobe-mcp-illustrator",
+    "io.github.zachshallbetter/adobe-mcp-indesign",
+    "io.github.zachshallbetter/adobe-mcp-photoshop",
+    "io.github.zachshallbetter/adobe-mcp-premiere",
+    "io.github.zachshallbetter/adobe-mcp-suite"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "squarespace": {
+  "n": 46,
+  "name": "Squarespace",
+  "flags": [
+   {
+    "field": "delivery",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.squarespace.com/commerce-apis/retrieve-basic-site-info"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://support.squarespace.com/hc/en-us/articles/41325887099533-Developer-Tools-APIs-at-Squarespace"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://developers.squarespace.com/mcp/overview"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "io.github.mrfentmen/squarespace-mcp"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "ecwid": {
+  "n": 47,
+  "name": "Ecwid",
+  "flags": [
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.ecwid.com/api-reference"
+   },
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "io.usefulapi/ecwid"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "gumroad": {
+  "n": 48,
+  "name": "Gumroad",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: \"If you're writing some custom code you need to run with your Gumroad account, all you need\""
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://gumroad.com/api"
+   },
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "io.github.marstudio360/gumroad-dna-mcp",
+    "io.usefulapi/gumroad"
+   ]
+  },
+  "composio_toolkits": [
+   "gumroad"
+  ]
+ },
+ "amazon-selling-partner": {
+  "n": 49,
+  "name": "Amazon Selling Partner",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developer-docs.amazon.com/sp-api/docs/tutorial-test-selling-partner-api-endpoints"
+   },
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: 'New to SP-API? [Create a developer API](https://developer.amazonservices.com/register)'"
+   },
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.agentapigate/amazon-product-walmart-shopify-ecommerce-mcp",
+    "ai.agentapihub/amazon-product-walmart-shopify-ecommerce-mcp",
+    "ai.agentxray/amazon-seller-mcp",
+    "ai.sellermate/amazon-ads",
+    "ai.trendsapi/amazon",
+    "ai.trendsmcp/amazon",
+    "ai.wondel/amazon",
+    "app.apiguru/amazon-data",
+    "com.amazonaws.us-east-1.execute-api.4fucgqu5if/agent-platform-rules",
+    "com.datadoe/amazon-seller-mcp",
+    "com.getmcpads/amazon-ads",
+    "com.gloriads/amazon-ads",
+    "com.hasdata/amazon",
+    "com.mambabuilt/mcp-amazon-product-price-stock-tracker",
+    "com.mambabuilt/mcp-amazon-top-reviews-scraper"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "fanbasis": {
+  "n": 50,
+  "name": "fanbasis",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "api_breadth",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://autodiscover.fanbasis.com"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": []
+  },
+  "composio_toolkits": []
+ },
+ "dataforseo": {
+  "n": 51,
+  "name": "DataForSEO",
+  "flags": [
+   {
+    "field": "official_mcp",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.insightfulpipe/dataforseo",
+    "io.scalably/dataforseo-mcp"
+   ]
+  },
+  "composio_toolkits": [
+   "dataforseo"
+  ]
+ },
+ "se-ranking": {
+  "n": 52,
+  "name": "SE Ranking",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://seranking.com/api/data/getting-started"
+   },
+   {
+    "field": "delivery",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://seranking.com/api/data/getting-started"
+   },
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://seranking.com/api-pricing.html"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "com.seranking/mcp"
+   ],
+   "registry_community": []
+  },
+  "composio_toolkits": []
+ },
+ "ahrefs": {
+  "n": 53,
+  "name": "Ahrefs",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.ahrefs.com/mcp/docs/introduction.md"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "com.ahrefs/mcp"
+   ],
+   "registry_community": [
+    "com.jojapi/ahrefs",
+    "com.mcparmory/ahrefs"
+   ]
+  },
+  "composio_toolkits": [
+   "ahrefs",
+   "ahrefs_mcp"
+  ]
+ },
+ "mrscraper": {
+  "n": 54,
+  "name": "MrScraper",
+  "flags": [],
+  "mcp": {
+   "registry_official": [
+    "io.github.mrscraper-com/mrscraper-mcp"
+   ],
+   "registry_community": []
+  },
+  "composio_toolkits": [
+   "mrscraper"
+  ]
+ },
+ "apify": {
+  "n": 55,
+  "name": "Apify",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.apify.com/api/v2"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.apify.com"
+   },
+   {
+    "field": "openapi_spec",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.apify.com/api"
+   },
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "error",
+    "detail": "registry lists official server(s) ['ai.xomia/xomiadata-apify-actors', 'com.apify/apify-mcp-server', 'com.brasspage/apify-actors'] but agent said unknown"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "ai.xomia/xomiadata-apify-actors",
+    "com.apify/apify-mcp-server",
+    "com.brasspage/apify-actors",
+    "com.clearfeedlabs/apify-data-feeds",
+    "dev.tanod/apify-document-to-markdown",
+    "dev.tanod/apify-image-ocr",
+    "dev.tanod/apify-pdf-ocr",
+    "dev.tanod/apify-pdf-toolkit",
+    "io.github.AHMEDFOUAAD/apify-public-jobs",
+    "io.github.AHMEDFOUAAD/apify-rag-content",
+    "io.github.AHMEDFOUAAD/apify-site-audit",
+    "io.github.AndriyVK/apify-document-tools",
+    "io.github.VZezelin/signal-lab-apify-tools",
+    "io.github.amitudai/micro-tool-factory-apify",
+    "io.github.apifymcpfactory-droid/eu-vat-validator",
+    "io.github.apifymcpfactory-droid/llms-txt-checker",
+    "io.github.apifymcpfactory-droid/tech-stack-detector",
+    "io.github.headply/apify-data-tools",
+    "io.github.maindtim/rock-apify-tools",
+    "io.github.msalihk/saliga-apify-tools",
+    "io.github.tidytools/tidytools-apify-tools"
+   ],
+   "registry_community": [
+    "com.mambabuilt/mcp-apify-run-health-monitor",
+    "com.mcparmory/apify",
+    "com.timzinin.api/apify-market-intelligence",
+    "io.github.Evozim/apify-native-mcp",
+    "io.github.atushi1841/japan-ec-apify-mcp",
+    "io.github.atushi1841/kensho-apify",
+    "io.github.jlucasmcrell/apify-scrapers",
+    "io.github.pipeworx-io/apify",
+    "io.github.pipeworx-io/geoapify",
+    "io.github.rossbuilds/rossai-apify-mcp",
+    "io.github.wonderpick/apify-b2b-ecom-automation-kit",
+    "io.usefulapi/geoapify"
+   ]
+  },
+  "composio_toolkits": [
+   "apify",
+   "apify_mcp"
+  ]
+ },
+ "firecrawl": {
+  "n": 56,
+  "name": "Firecrawl",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.firecrawl.dev/authentication"
+   },
+   {
+    "field": "openapi_spec",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.firecrawl.dev/api-reference/v2-introduction"
+   },
+   {
+    "field": "auth_methods",
+    "check": "rule",
+    "severity": "error",
+    "detail": "'none' listed together with ['api_key', 'oauth2', 'none']"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "io.github.firecrawl/firecrawl-mcp-server"
+   ],
+   "registry_community": [
+    "co.civai.nova/mcp-firecrawl",
+    "com.mcparmory/firecrawl",
+    "io.github.Ansarii/firecrawl-stealth-mcp",
+    "io.github.pipeworx-io/firecrawl"
+   ]
+  },
+  "composio_toolkits": [
+   "firecrawl"
+  ]
+ },
+ "bright-data": {
+  "n": 57,
+  "name": "Bright Data",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.brightdata.com/api-reference/authentication"
+   },
+   {
+    "field": "api_styles",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.brightdata.com/products/scraper-studio/quickstart"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'POST /dca/trigger, which queues one or more inputs and returns a snapshot ID. GET /dca/dat'"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "io.github.brightdata/brightdata-mcp"
+   ],
+   "registry_community": [
+    "ai.smithery/luminati-io-brightdata-mcp",
+    "app.brightlyai/brightly",
+    "co.brightkey/education-data",
+    "com.brightmoot/brightmoot",
+    "com.brightsec/mcp",
+    "com.calcbright/calcbright",
+    "com.modevc/firm-brighton-park-capital",
+    "dev.cotlet/brightlocal",
+    "fi.brighter/brighter",
+    "io.github.AnonymousOnyx22/brightspace-d2l-mcp",
+    "io.github.BrightSiteHQ/brightsite",
+    "io.github.BrightWayAI/video-analyzer",
+    "io.github.BrightbeamAI/brevet",
+    "io.github.BrightbeamAI/chap",
+    "io.github.BrightbeamAI/metis"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "sherlock": {
+  "n": 58,
+  "name": "Sherlock",
+  "flags": [],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.hostsherlock/mcp",
+    "io.github.FGC-Shreyansh-Chachaundiya/codesherlock-mcp-server",
+    "io.github.jcucci/dotnet-sherlock-mcp"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "waterfall-io": {
+  "n": 59,
+  "name": "Waterfall.io",
+  "flags": [
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.mambabuilt/mcp-email-waterfall-orchestrator",
+    "com.mambabuilt/mcp-mobile-phone-waterfall-orchestrator",
+    "io.github.waterfallbridge/mcp"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "clay": {
+  "n": 60,
+  "name": "Clay",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.clay.com/concepts/cli-basics"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: '\"openapi\":\"/openapi.json post /audiences/privacy-delete\",\"href\":\"/api-reference/audiences/'"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.clay.com/concepts/cli-basics"
+   },
+   {
+    "field": "openapi_spec",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.clay.com/concepts/cli-basics"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://www.clay.com/guides/clay-mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "app.clayware/clayware",
+    "com.mambabuilt/mcp-clay-to-instantly-smartlead-push",
+    "io.github.albemarlestudio/clayre",
+    "io.github.clay-swartz/pennyrail",
+    "io.github.claymore666/ccu-mcp",
+    "io.github.claymore666/debmatic-mcp",
+    "io.github.clayseal/clayseal",
+    "io.github.clayton/docdiffai",
+    "io.github.claytono/go-unifi-mcp",
+    "io.github.grayclayton/aetre-mcp",
+    "io.github.mrfentmen/clay-bar-guide-mcp",
+    "io.github.vincentzhang15/claycut"
+   ]
+  },
+  "composio_toolkits": [
+   "clay",
+   "clay_mcp"
+  ]
+ },
+ "github": {
+  "n": 61,
+  "name": "GitHub",
+  "flags": [
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "error",
+    "detail": "registry lists official server(s) ['io.github.github/github-mcp-server'] but agent said unknown"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "io.github.github/github-mcp-server"
+   ],
+   "registry_community": [
+    "ai.agentapigate/github-huggingface-arxiv-papers-repos-search-api-mcp",
+    "ai.agentapihub/github-huggingface-arxiv-papers-repos-search-api-mcp",
+    "ai.smithery/Hint-Services-obsidian-github-mcp",
+    "ai.smithery/saidsef-mcp-github-pr-issue-analyser",
+    "ai.smithery/smithery-ai-github",
+    "app.tuper/github-repos",
+    "com.a2awire/data-github-changelog-platform-change-announcement",
+    "com.a2awire/data-trending-repository-new-github-repo-discovery",
+    "com.getstarhunt/github-developer-sourcing",
+    "com.githubcard/mcp",
+    "com.mambabuilt/mcp-github-followers-following-export",
+    "com.mambabuilt/mcp-github-organization-signal-scanner",
+    "com.mcparmory/github",
+    "com.robinsonaisystems/github",
+    "com.thenextgennexus/github-mcp-server"
+   ]
+  },
+  "composio_toolkits": [
+   "github",
+   "github_mcp"
+  ]
+ },
+ "vercel": {
+  "n": 62,
+  "name": "Vercel",
+  "flags": [
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://vercel.com/docs/rest-api"
+   },
+   {
+    "field": "openapi_spec",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://vercel.com/docs/rest-api"
+   },
+   {
+    "field": "official_mcp",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://vercel.com/docs/accounts/access-tokens"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "com.vercel/vercel-mcp",
+    "io.github.vercel/next-devtools-mcp"
+   ],
+   "registry_community": [
+    "app.vercel.agent-permissions-index/agent-permissions-index",
+    "app.vercel.agent-shopping-tracker/feed",
+    "app.vercel.agent-svg-registry/mcp",
+    "app.vercel.agentready-rho/agentready",
+    "app.vercel.aididwhat/aididwhat",
+    "app.vercel.auditflag-lac/auditflag",
+    "app.vercel.automaton-tx-explainer/base-tools",
+    "app.vercel.axiom-risk-mcp/solana-token-risk",
+    "app.vercel.baselens-api/baselens",
+    "app.vercel.chainshift-preview/korea-sets",
+    "app.vercel.cleanmarket/marketplace",
+    "app.vercel.clearpage-x402/clearpage",
+    "app.vercel.cloakcheck-wheat/cloakcheck",
+    "app.vercel.codigo07/human-verification-peru",
+    "app.vercel.control-your-tesla/control-your-tesla"
+   ]
+  },
+  "composio_toolkits": [
+   "vercel",
+   "vercel_ai_gateway",
+   "vercel_mcp"
+  ]
+ },
+ "netlify": {
+  "n": 63,
+  "name": "Netlify",
+  "flags": [
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api"
+   },
+   {
+    "field": "openapi_spec",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://open-api.netlify.com"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://www.netlify.com/press/netlify-launches-official-mcp-server-setting-the-standard-for-agent-native-development"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "app.netlify.acenes-of-sparta-the-dragon-slayer/epic-fantasy-101-booklist",
+    "app.netlify.agent-kb-y83q/kb",
+    "app.netlify.agent-rescue-desk/production-triage",
+    "app.netlify.automatom-x402/web-data-toolkit",
+    "app.netlify.chaincheck-api/chaincheck",
+    "app.netlify.clify-dev/clify",
+    "app.netlify.gleaming-cassata-d41682/lion-mcp",
+    "app.netlify.japan-data-mcp/japan-data-mcp",
+    "app.netlify.kitchen-pass/chef",
+    "app.netlify.meinlem/nexo",
+    "app.netlify.meinlem2/nexo",
+    "app.netlify.micropay-test-suite/micropay-test-suite",
+    "app.netlify.shigoto-dogu/order-eval",
+    "app.netlify.tenderdelta/tenders",
+    "app.netlify.thechesscoach/chess-coach"
+   ]
+  },
+  "composio_toolkits": [
+   "netlify_mcp"
+  ]
+ },
+ "cloudflare": {
+  "n": 64,
+  "name": "Cloudflare",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.cloudflare.com/api/go/resources/iam/subresources/oauth_scopes/methods/list"
+   },
+   {
+    "field": "access_tier",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.cloudflare.com/api-shield/plans"
+   },
+   {
+    "field": "api_styles",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.cloudflare.com/pages/configuration/api"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.cloudflare.com/api"
+   },
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "error",
+    "detail": "registry lists official server(s) ['com.cloudflare.mcp/mcp'] but agent said unknown"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "com.cloudflare.mcp/mcp"
+   ],
+   "registry_community": [
+    "com.jojapi/bypass-cloudflare-api",
+    "com.jojapi/cloudflare-solver",
+    "com.trycloudflare.annotated-lot-operational-tourism/kai-agi",
+    "com.trycloudflare.barrier-sought-lbs-reader/quotes",
+    "com.trycloudflare.candy-josh-writers-balance/yultrace-audit",
+    "com.trycloudflare.candy-josh-writers-balance/yultrace-bounty-feed",
+    "com.trycloudflare.clients-involving-billion-headers/agent-web-actions",
+    "com.trycloudflare.clients-involving-billion-headers/ai-video-generator",
+    "com.trycloudflare.configurations-resource-newport-leaders/uptime-marketplace",
+    "com.trycloudflare.doe-calculation-consists-ipod/quotes",
+    "com.trycloudflare.electron-quality-edge-chapter/ghost",
+    "com.trycloudflare.emails-ship-peninsula-deliver/registry-verifier-target-a",
+    "com.trycloudflare.emails-ship-peninsula-deliver/registry-verifier-target-b",
+    "com.trycloudflare.expanded-oven-hardwood-cheque/trc20-instruments",
+    "com.trycloudflare.favor-skilled-ben-plugin/prooffetch"
+   ]
+  },
+  "composio_toolkits": [
+   "cloudflare",
+   "cloudflare_api_key",
+   "cloudflare_browser_rendering",
+   "cloudflare_mcp"
+  ]
+ },
+ "supabase": {
+  "n": 65,
+  "name": "Supabase",
+  "flags": [
+   {
+    "field": "delivery",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://supabase.com/docs/guides/api"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://supabase.com/docs/reference/api/introduction"
+   },
+   {
+    "field": "openapi_spec",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://supabase.com/docs/reference/api/introduction"
+   },
+   {
+    "field": "official_mcp",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://supabase.com/blog/mcp-server"
+   },
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://supabase.com"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "com.supabase/mcp"
+   ],
+   "registry_community": [
+    "ai.smithery/MisterSandFR-supabase-mcp-selfhosted",
+    "ai.smithery/pinion05-supabase-mcp-lite",
+    "ai.waystation/supabase",
+    "io.github.Tthanh2k6/supabase-rls-check",
+    "io.github.mcp-dir/supabase-mcp",
+    "io.github.mrfentmen/supabase-mcp",
+    "io.github.sadri-dridi/supabase-url-shape"
+   ]
+  },
+  "composio_toolkits": [
+   "supabase",
+   "supabase_mcp",
+   "supabase_read_mcp"
+  ]
+ },
+ "neo4j": {
+  "n": 66,
+  "name": "Neo4j",
+  "flags": [],
+  "mcp": {
+   "registry_official": [
+    "io.github.neo4j-labs/neo4j-mcp-canary"
+   ],
+   "registry_community": [
+    "io.github.neo4j-contrib/gds-agent",
+    "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+    "io.github.neo4j-contrib/mcp-neo4j-cypher",
+    "io.github.neo4j-contrib/mcp-neo4j-data-modeling",
+    "io.github.neo4j-contrib/mcp-neo4j-memory"
+   ]
+  },
+  "composio_toolkits": [
+   "neo4j"
+  ]
+ },
+ "snowflake": {
+  "n": 67,
+  "name": "Snowflake",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/reference"
+   },
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "error",
+    "detail": "registry lists official server(s) ['io.github.Snowflake-Labs/mcp'] but agent said unknown"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "io.github.Snowflake-Labs/mcp"
+   ],
+   "registry_community": [
+    "io.github.alphaparkinc/genpark-distributed-id-snowflake-generator-skill",
+    "io.github.nsphung/mcp-snowflake-server",
+    "io.github.sadri-dridi/snowflake-ok",
+    "io.github.sadri-dridi/snowflake-seq",
+    "io.github.sadri-dridi/snowflake-shape",
+    "io.github.sadri-dridi/snowflake-ts",
+    "io.github.sadri-dridi/snowflake-ts2",
+    "io.github.sadri-dridi/snowflake-worker"
+   ]
+  },
+  "composio_toolkits": [
+   "snowflake",
+   "snowflake_basic"
+  ]
+ },
+ "mongodb-atlas": {
+  "n": 68,
+  "name": "MongoDB Atlas",
+  "flags": [
+   {
+    "field": "openapi_spec",
+    "check": "support",
+    "severity": "error",
+    "detail": "quote does not mention openapi spec: 'For the Atlas API documentation, see: https://www.mongodb.com/docs/atlas/reference/api-res'"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://www.mongodb.com/products/updates/now-ga-mongodb-atlas-managed-mcp-server"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.getvda/elasticsearch-mongodb-redis-stack-generator-elasticsearch-elasticsearch",
+    "ai.getvda/memcached-mongodb-redis-compose-generator",
+    "ai.getvda/rabbitmq-elasticsearch-mongodb-stack-generator",
+    "ai.getvda/rabbitmq-postgres-mongodb-stack-generator",
+    "io.github.fean-developer/mongodb-readonly-mcp",
+    "io.github.infoinlet-marketplace/mcp-mongodb",
+    "io.github.mongodb-js/mongodb-mcp-server"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "datadog": {
+  "n": 69,
+  "name": "Datadog",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://docs.datadoghq.com/mcp_server/setup"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.mcparmory/datadog",
+    "io.github.TANTIOPE/datadog-mcp",
+    "io.github.us-all/datadog"
+   ]
+  },
+  "composio_toolkits": [
+   "datadog",
+   "datadog_mcp"
+  ]
+ },
+ "sentry": {
+  "n": 70,
+  "name": "Sentry",
+  "flags": [
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "io.github.getsentry/sentry-mcp"
+   ],
+   "registry_community": [
+    "com.0xpi.sdsentry/sds-lookup",
+    "com.lihaila/dissentry",
+    "com.mcparmory/sentry",
+    "com.regsentry/tracking-inspector",
+    "com.srofia/sentryfi",
+    "io.github.14manj01/camsentry-mcp",
+    "io.github.Humanleap/sentrydock",
+    "io.github.Jackxiaozhiren/datasentry",
+    "io.github.Lihaila/dissentry",
+    "io.github.Roshan6335/mcpsentry",
+    "io.github.bricksentry/bricksentry",
+    "io.github.friendlygeorge/sentry-mcp-server",
+    "io.github.mrfentmen/sentry-mcp",
+    "io.github.perceptdot/sentry",
+    "io.github.rezmeplxrf/insightsentry_mcp"
+   ]
+  },
+  "composio_toolkits": [
+   "sentry",
+   "sentry_mcp"
+  ]
+ },
+ "notion": {
+  "n": 71,
+  "name": "Notion",
+  "flags": [
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.notion.com/guides/notion-api/quick-start"
+   },
+   {
+    "field": "main_blocker",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.notion.com/guides/notion-api/quick-start"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "com.notion/mcp"
+   ],
+   "registry_community": [
+    "ai.smithery/smithery-notion",
+    "com.foreverworks/notion",
+    "com.insightfulpipe/notion",
+    "com.mcparmory/notion",
+    "dev.wirecat/notion-cli",
+    "io.github.ai-aviate/better-notion",
+    "io.github.awkoy/notion-mcp-server",
+    "io.github.cphoskins/notion-full-mcp",
+    "io.github.imgul/notion-arena",
+    "io.github.infoinlet-marketplace/mcp-notion",
+    "io.github.misterwigglesworth/easy-notion",
+    "io.github.n24q02m/better-notion-mcp",
+    "io.github.n24q02m/notion",
+    "io.github.pipeworx-io/notion_connect",
+    "io.github.quietnotion/barevalue"
+   ]
+  },
+  "composio_toolkits": [
+   "notion",
+   "notion_mcp"
+  ]
+ },
+ "airtable": {
+  "n": 72,
+  "name": "Airtable",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'The Webhooks API allows developers to be notified in real-time about changes in their base'"
+   },
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://support.airtable.com/articles/6896142030-how-airtable-supports-gdpr-data-deletion-requests"
+   },
+   {
+    "field": "main_blocker",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://support.airtable.com/articles/6896142030-how-airtable-supports-gdpr-data-deletion-requests"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "com.airtable/mcp"
+   ],
+   "registry_community": [
+    "ai.waystation/airtable",
+    "com.insightfulpipe/airtable",
+    "com.mcparmory/airtable",
+    "io.github.Automations-Project/airtable-user-mcp",
+    "io.github.domdomegg/airtable-mcp-server",
+    "io.github.mrfentmen/airtable-mcp",
+    "io.github.pipeworx-io/airtable",
+    "io.github.rashidazarang/airtable-mcp"
+   ]
+  },
+  "composio_toolkits": [
+   "airtable"
+  ]
+ },
+ "linear": {
+  "n": 73,
+  "name": "Linear",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: 'API and webhook access Included Included Included Included'"
+   },
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://linear.app/pricing"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "app.linear/linear"
+   ],
+   "registry_community": [
+    "co.civai.nova/mcp-linear",
+    "dev.wirecat/linear-cli",
+    "io.github.Evozim/linear-broker",
+    "io.github.adelaidasofia/linear-mcp",
+    "io.github.magurelabs/linear",
+    "io.github.mrfentmen/linear-mcp",
+    "io.github.mrfentmen/linear-programming-mcp",
+    "io.github.pipeworx-io/linear",
+    "io.github.sadri-dridi/linear-id-ok",
+    "io.github.sadri-dridi/linear-id-shape",
+    "io.github.toolwright-adk/linear-bootstrap",
+    "io.usefulapi/linear",
+    "org.openlyuseful/linear-project"
+   ]
+  },
+  "composio_toolkits": [
+   "linear",
+   "linear_mcp"
+  ]
+ },
+ "jira": {
+  "n": 74,
+  "name": "Jira",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://community.atlassian.com/forums/discussion/814987/how-to-authenticate-to-jira-rest-api"
+   },
+   {
+    "field": "official_mcp",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://www.atlassian.com/blog/confluence/remote-mcp-server"
+   },
+   {
+    "field": "official_mcp",
+    "check": "support",
+    "severity": "error",
+    "detail": "quote does not mention official mcp: 'ra and Confluence wherever you use Claude to do all sorts of things like: Summarize Jira w'"
+   },
+   {
+    "field": "delivery",
+    "check": "link",
+    "severity": "error",
+    "detail": "evidence URL returns 404: https://docs.atlassian.com/software/jira/docs/api/REST/7.6.1"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "com.atlassian/atlassian-mcp-server"
+   ],
+   "registry_community": [
+    "ai.waystation/jira",
+    "com.mcparmory/atlassian-confluence",
+    "com.mcparmory/atlassian-jira",
+    "io.github.BiteFoundry/atlassian",
+    "io.github.EugeneNeverov/productops-jira",
+    "io.github.GeiserX/atlassian-browser-mcp",
+    "io.github.IamSAL/jira-easy-mcp",
+    "io.github.Kujirafu/agentlore",
+    "io.github.MrRefactoring/atlassian-dc-mcp-bitbucket",
+    "io.github.MrRefactoring/atlassian-dc-mcp-confluence",
+    "io.github.MrRefactoring/atlassian-dc-mcp-jira",
+    "io.github.Servosity/jira-service-management-mcp",
+    "io.github.aaronsb/jira-cloud",
+    "io.github.agentic-eng/a2atlassian",
+    "io.github.alyiox/mcp-atlassian-attachments"
+   ]
+  },
+  "composio_toolkits": [
+   "jira"
+  ]
+ },
+ "asana": {
+  "n": 75,
+  "name": "Asana",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: 'You need to register your app with Asana, that will give you credentials. You can do that '"
+   },
+   {
+    "field": "openapi_spec",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.asana.com/reference/rest-api-reference"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://developers.asana.com/docs/integrating-with-asanas-mcp-server"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.mcparmory/asana",
+    "com.supersaasanalytics/analytics",
+    "io.github.asanabrial/estigia",
+    "io.github.asanabrial/leteo",
+    "io.github.hasanaydin7/neuralng",
+    "io.github.jtalk22/asana-mcp-server",
+    "io.github.pipeworx-io/asana",
+    "io.github.pouyahasanamreji/continuum",
+    "io.github.sadri-dridi/asana-gid-ok",
+    "io.github.sincekmori/asana-gate"
+   ]
+  },
+  "composio_toolkits": [
+   "asana"
+  ]
+ },
+ "monday-com": {
+  "n": 76,
+  "name": "Monday.com",
+  "flags": [
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developer.monday.com/api-reference/docs/developer-sandbox"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "com.monday/monday.com"
+   ],
+   "registry_community": [
+    "ai.firstmonday/jobs",
+    "ai.waystation/monday",
+    "app.mondaymiracle/fantasy-football",
+    "io.github.pipeworx-io/monday"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "clickup": {
+  "n": 77,
+  "name": "ClickUp",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://clickup.com/blog/clickup-api"
+   },
+   {
+    "field": "api_styles",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developer.clickup.com/docs/authentication"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.smithery/skr-cloudify-clickup-mcp-server-new",
+    "com.mcparmory/clickup",
+    "io.github.KelvinCampelo/clickup-full-mcp",
+    "io.github.cryogenized-spec/clickup-serviteur-mcp",
+    "io.github.cvrt-jh/clickup-mcp",
+    "io.github.helbertparanhos/clickup-mcp-pro",
+    "io.github.naderali2235/YAARClickUpMCP",
+    "io.github.pipeworx-io/clickup",
+    "io.github.retailbox-automation/clickup-mcp",
+    "io.github.taazkareem/clickup",
+    "io.usefulapi/clickup"
+   ]
+  },
+  "composio_toolkits": [
+   "clickup",
+   "clickup_mcp"
+  ]
+ },
+ "coda": {
+  "n": 78,
+  "name": "Coda",
+  "flags": [
+   {
+    "field": "openapi_spec",
+    "check": "support",
+    "severity": "error",
+    "detail": "quote does not mention openapi spec: 'To get started with prototyping the API quickly in Postman, you can use one of links above'"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://coda.io/developers"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "app.codaphone/mcp",
+    "com.codaurl/mcp",
+    "com.iterruptivo.ecodashboard/ecoplaza-mcp",
+    "com.mcparmory/codacy",
+    "io.github.ChocoData-com/amazon-scraper-api-mcp",
+    "io.github.ajemba/codasms-mcp",
+    "io.github.albertescoda/tennis-control",
+    "io.github.codapult/guard",
+    "io.github.harshitAgr/codabench-mcp",
+    "io.github.nkpar/coda",
+    "io.github.sepehr071/codal-mcp",
+    "io.github.vish288/mcp-coda",
+    "io.usefulapi/codat",
+    "ro.codai/codai",
+    "us.telcodata/telcodata"
+   ]
+  },
+  "composio_toolkits": [
+   "coda"
+  ]
+ },
+ "smartsheet": {
+  "n": 79,
+  "name": "Smartsheet",
+  "flags": [
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://developers.smartsheet.com/api/smartsheet/introduction"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.solutionsbradshaw/smartsheet-audit",
+    "io.github.christianclaudio/smartsheet-rm"
+   ]
+  },
+  "composio_toolkits": [
+   "smartsheet"
+  ]
+ },
+ "harvest": {
+  "n": 80,
+  "name": "Harvest",
+  "flags": [
+   {
+    "field": "openapi_spec",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://help.getharvest.com/api-v2"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.mapsharvest/maps-harvest",
+    "com.pixharvest/esp32-control",
+    "com.pixharvest/gov-contract-radar",
+    "com.pixharvest/tariff-data",
+    "com.runharvester/mcp",
+    "io.github.AnshumanAtrey/linkedin-harvester",
+    "io.github.AnshumanAtrey/theharvester-osint",
+    "io.github.Evozim/crypto-tax-loss-harvester-mcp",
+    "io.github.MohanVishe/mediaharvest",
+    "io.github.The-Warl0ck/harvest-mcp",
+    "io.github.devkindhq/theharvester-mcp",
+    "io.github.hulin42/keynote-harvest-mcp",
+    "io.github.jjchong5/tidyharvest-data-tools",
+    "io.github.mrfentmen/fig-harvest-guide-mcp",
+    "io.github.mrfentmen/pecan-harvest-guide-mcp"
+   ]
+  },
+  "composio_toolkits": [
+   "harvest"
+  ]
+ },
+ "stripe": {
+  "n": 81,
+  "name": "Stripe",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.stripe.com/api"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "com.stripe/mcp"
+   ],
+   "registry_community": [
+    "app.vercel.stripecheckup/stripecheckup",
+    "com.insightfulpipe/stripe",
+    "eu.nordicmcp/stripe",
+    "io.github.CSOAI-ORG/meok-stripe-acp-checkout-mcp",
+    "io.github.CSOAI-ORG/stripe-billing-mcp",
+    "io.github.codespar/mcp-stripe",
+    "io.github.codespar/mcp-stripe-acp",
+    "io.github.friendlygeorge/stripe-mcp-server",
+    "io.github.infoinlet-marketplace/mcp-stripe",
+    "io.github.lordbasilaiassistant-sudo/stripe-analytics",
+    "io.github.mcp-dir/stripe-mcp",
+    "io.github.mrfentmen/stripe-mcp",
+    "io.github.pipeworx-io/stripe_connect",
+    "io.github.rafaelcg/stripekit",
+    "io.github.robinafaruqia/stripe-mcp"
+   ]
+  },
+  "composio_toolkits": [
+   "stripe",
+   "stripe_mcp"
+  ]
+ },
+ "plaid": {
+  "n": 82,
+  "name": "Plaid",
+  "flags": [
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://plaid.com/blog/plaid-mcp-ai-assistant-claude"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "io.github.mrfentmen/plaid-mcp",
+    "io.github.pipeworx-io/plaid"
+   ]
+  },
+  "composio_toolkits": [
+   "plaid",
+   "plaid_mcp"
+  ]
+ },
+ "binance": {
+  "n": 83,
+  "name": "Binance",
+  "flags": [
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developers.binance.com/en/docs/products/spot/CHANGELOG"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://developers.binance.com/en/docs/agent-native/mcp-server"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "io.github.Alejandrehl/kainext-binance-mcp",
+    "io.github.Evozim/binance-orderbook-mcp",
+    "io.github.KumailQazi/krmaazha-binance-mcp",
+    "io.github.junct-bot/binance-mcp",
+    "io.github.mrfentmen/binance-market-mcp"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "paygent-connect": {
+  "n": 84,
+  "name": "Paygent Connect",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: 'Contact your account manager or submit a request to learn more about the NMI Direct Connec'"
+   },
+   {
+    "field": "api_styles",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.nmi.com/docs/about-direct-connect"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'The following Software Development Kits are available: Java 8+, .NET 5.1.0, .NET 5.3.0'"
+   },
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.nmi.com/docs/direct-connect"
+   },
+   {
+    "field": "main_blocker",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.nmi.com/docs/direct-connect"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://docs.nmi.com/docs/mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.paygenthq/paygent",
+    "co.xianmi/xianmi",
+    "com.obsmetrics.paygent/agents",
+    "com.whatsonmiami/whats-on-miami",
+    "fr.humanmirror/flow",
+    "fr.humanmirror/forge",
+    "fr.humanmirror/nexus",
+    "fr.humanmirror/omnidome",
+    "fr.humanmirror/one",
+    "fr.humanmirror/oracle",
+    "fr.humanmirror/outcome",
+    "fr.humanmirror/x402",
+    "io.github.CloudCorpRecords/designmind",
+    "io.github.Iconmind/iconmind",
+    "io.github.Shweta-Mishra-ai/tokenmizer"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "ipayx": {
+  "n": 85,
+  "name": "iPayX",
+  "flags": [
+   {
+    "field": "auth_methods",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "access_tier",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "api_styles",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "api_breadth",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "buildability",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "error",
+    "detail": "registry lists official server(s) ['io.github.iPAYX-Technologies/mcp-fx-audit'] but agent said False"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "io.github.iPAYX-Technologies/mcp-fx-audit"
+   ],
+   "registry_community": [
+    "io.github.Ipayx-stellar/fx-audit"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "quickbooks": {
+  "n": 86,
+  "name": "QuickBooks",
+  "flags": [
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.intuitek.the-stall/the-stall",
+    "ai.logistify/quickbooks-desktop",
+    "ai.ototo/quickbooks",
+    "ai.userintuition/research",
+    "com.caribooks/quickbooks",
+    "com.devart/mcp-quickbooks",
+    "com.kipper/quickbooks",
+    "com.ledgercrossing/quickbooks-desktop",
+    "com.qubesync/quickbooks-desktop-api",
+    "com.zenofirm/quickbooks-desktop",
+    "io.github.Intuition-Lab/personal-model",
+    "io.github.NyxToolsDev/quickbooks-mcp-server",
+    "io.github.Servosity/quickbooks-mcp",
+    "io.github.amin-ale/mcp-quickbooks",
+    "io.github.asklokesh/quickbooks-mcp-server"
+   ]
+  },
+  "composio_toolkits": [
+   "quickbooks"
+  ]
+ },
+ "xero": {
+  "n": 87,
+  "name": "Xero",
+  "flags": [
+   {
+    "field": "openapi_spec",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://developer.xero.com/faq"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://devblog.xero.com/xero-developer-day-recap-39adea31ffc2"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.getboxkite/xero-backup-export",
+    "com.kipper/xero",
+    "com.pilot.meridian/xero-connector",
+    "io.github.Servosity/xero-mcp",
+    "io.github.WYRE-AI/xero-mcp",
+    "io.github.Xerolo44/rpgmaker-mv-mcp",
+    "io.github.asklokesh/xero-mcp-server",
+    "io.github.codespar/mcp-xero",
+    "io.github.mindstone/mcp-server-xero",
+    "io.github.pipeworx-io/xero",
+    "io.github.ryanzambrano/pixero",
+    "io.github.wyre-technology/xero-mcp",
+    "nz.co.invio/xero"
+   ]
+  },
+  "composio_toolkits": [
+   "xero"
+  ]
+ },
+ "brex": {
+  "n": 88,
+  "name": "Brex",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: 'Generate one from Settings → Developer in the Brex Dashboard.'"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://developer.brex.com/docs/mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "io.github.PalabreX/runpay",
+    "io.github.shuji-bonji/s1000d-brex-mcp"
+   ]
+  },
+  "composio_toolkits": [
+   "brex"
+  ]
+ },
+ "ramp": {
+  "n": 89,
+  "name": "Ramp",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: 'To begin using the Ramp Developer API, you must first create a developer app to obtain you'"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'For machine-readable docs, fetch: /llms.txt (LLM index), /llms-guides.txt (guides index), '"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.ramp.com"
+   },
+   {
+    "field": "openapi_spec",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.ramp.com"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://builders.ramp.com/post/ramp-mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.adramp/google-ads",
+    "com.mcparmory/ramp",
+    "com.mudko/onramperx",
+    "com.ontoramp/decision-intelligence",
+    "com.ontoramp/governance-assessment",
+    "com.ontoramp/graph-query",
+    "com.ontoramp/knowledge-cartographer",
+    "com.ontoramp/transformation-radar",
+    "com.trampolineparkdata/agent-api",
+    "com.uprampr/marketplace",
+    "dev.cotlet/workramp",
+    "dev.rampify/rampify-mcp",
+    "io.github.CloudCorpRecords/diagramport",
+    "io.github.KevinRabun/FedRAMP20xMCP",
+    "io.github.Ramp-Jet/mothermachine"
+   ]
+  },
+  "composio_toolkits": [
+   "ramp",
+   "ramp_mcp"
+  ]
+ },
+ "pitchbook": {
+  "n": 90,
+  "name": "PitchBook",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention access tier: 'Our API is a separate offering from the PitchBook Platform that requires a standalone cont'"
+   },
+   {
+    "field": "auth_methods",
+    "check": "support",
+    "severity": "error",
+    "detail": "'bearer_token' claimed but never mentioned in the official pages read"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://pitchbook.com/products/premium-connectors"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": []
+  },
+  "composio_toolkits": [
+   "pitchbook"
+  ]
+ },
+ "notebooklm": {
+  "n": 91,
+  "name": "NotebookLM",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.cloud.google.com/gemini/enterprise/docs/reference/rpc/google.cloud.notebooklm.v1alpha"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'AudioOverviewService (interface) DiscoverSourcesService (interface) LabelService (interfac'"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.cloud.google.com/gemini/enterprise/docs/reference/rpc/google.cloud.notebooklm.v1alpha"
+   },
+   {
+    "field": "official_mcp",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "academy.mycontent/google-ads",
+    "ai.adplane/google-ads",
+    "ai.adramp/google-ads",
+    "ai.agentapigate/facebook-meta-google-tiktok-ads-library-api-mcp",
+    "ai.agentapigate/google-maps-places-business-app-reviews-mcp",
+    "ai.agentapigate/google-serp-web-scraping-domain-search-mcp",
+    "ai.agentapigate/google-trends-seo-keywords-serp-search-mcp",
+    "ai.agentapihub/facebook-meta-google-tiktok-ads-library-api-mcp",
+    "ai.agentapihub/google-maps-places-business-app-reviews-mcp",
+    "ai.agentapihub/google-serp-web-scraping-domain-search-mcp",
+    "ai.agentapihub/google-trends-seo-keywords-serp-search-mcp",
+    "ai.b77/google-ads",
+    "ai.b77/google-news",
+    "ai.b77/google-search-console",
+    "ai.getvda/google-oauth-credential-service"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "otter-ai": {
+  "n": 92,
+  "name": "Otter AI",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: \"To retrieve the next page, use the next_cursor value in your next request's cursor query p\""
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://help.otter.ai/api/v2/help_center/en-us/articles/35287607569687.json"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.painspotter/painspotter",
+    "ai.seaotter/otterscore",
+    "com.allyotter/allyotter-lite",
+    "com.bugotter/mcp",
+    "com.drawstoday/lottery-numbers",
+    "com.hanaprism/lottery-numbers",
+    "com.intoperson.tools/lottery-numbers",
+    "com.lawbotter/lawbotter",
+    "com.potterysupplieshq/site",
+    "com.professorotter/activities",
+    "com.stayotter/stay-otter",
+    "com.threadotter/agent",
+    "dev.cotlet/otter",
+    "fyi.jotter/jot",
+    "io.github.GoodTurnStudio/artspotter"
+   ]
+  },
+  "composio_toolkits": [
+   "otter_ai_mcp"
+  ]
+ },
+ "fathom": {
+  "n": 93,
+  "name": "Fathom",
+  "flags": [
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://help.fathom.video/en/articles/11497793"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.fathom.api/mcp",
+    "ai.qompass/fathom",
+    "dev.cotlet/fathom-video",
+    "dev.fly.fathom-lab-door/fathom",
+    "io.github.CYAN-ECLIPSE-TECHNOLOGIES-LLC/fathom",
+    "io.github.agencyenterprise/fathom-mcp-server",
+    "io.github.fathomise/mailfathom",
+    "io.github.mindstone/mcp-server-fathom",
+    "io.github.sadri-dridi/fathom-m",
+    "io.github.sadri-dridi/fathom-to-m",
+    "io.usefulapi/fathom-analytics"
+   ]
+  },
+  "composio_toolkits": [
+   "fathom"
+  ]
+ },
+ "consensus": {
+  "n": 94,
+  "name": "Consensus",
+  "flags": [
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://docs.consensus.app/consensus-mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.consensus-analytics/mcp",
+    "com.ryecentral/consensus",
+    "com.tinab/consensus",
+    "io.github.Evozim/consensus-voter-mcp",
+    "io.github.MICONNM/openclaw-consensus-mcp",
+    "io.github.TheStevenJohnstone/ai-consensus",
+    "io.github.adicted07-lang/meridian-consensus",
+    "io.github.alphaparkinc/genpark-multi-agent-borda-voting-consensus-skill",
+    "io.github.masterblaster14/consensus",
+    "net.tipmaster/consensus"
+   ]
+  },
+  "composio_toolkits": [
+   "consensus",
+   "consensus_mcp"
+  ]
+ },
+ "reducto": {
+  "n": 95,
+  "name": "Reducto",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'Full OpenAPI spec with request/response schemas, error codes, and rate limits.'"
+   },
+   {
+    "field": "api_breadth",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.reducto.ai/quickstart"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://docs.reducto.ai/mcp-server"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": []
+  },
+  "composio_toolkits": []
+ },
+ "devin": {
+  "n": 96,
+  "name": "Devin",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.devin.ai/api-reference/overview"
+   },
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'openapi\":\"v2-openapi.yaml POST /v2/enterprise/api-keys\",\"href\":\"/api-reference/v2/api-keys'"
+   },
+   {
+    "field": "buildability",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://docs.devin.ai/desktop/accounts/usage"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "io.devinbox/devinbox",
+    "io.github.AzalHoseinian/devinsight-mcp",
+    "io.github.Cookiebreed/card-recognition-mcp",
+    "io.github.DevInder1/tridentchain-security",
+    "io.github.DevinoSolutions/upapi-mcp",
+    "io.github.Icaro0310/devin-memory",
+    "io.github.devin-lemcke/canusign-mcp-server",
+    "io.github.devinmlowe/engram",
+    "io.github.devinwang/app-store-connect-mcp",
+    "io.github.devinwang/cloak-browser-mcp",
+    "io.github.devinwang/google-play-developer-mcp",
+    "io.github.shalevshalit/image-recognition-mcp",
+    "io.github.student920/face-recognition-mcp-server"
+   ]
+  },
+  "composio_toolkits": [
+   "devin_mcp"
+  ]
+ },
+ "higgsfield": {
+  "n": 97,
+  "name": "higgsfield",
+  "flags": [
+   {
+    "field": "access_tier",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "app.higgsfield.agentwares/marketplace",
+    "app.higgsfield.mizan-bazar/mizan"
+   ]
+  },
+  "composio_toolkits": [
+   "higgsfield",
+   "higgsfield_mcp"
+  ]
+ },
+ "mermaid-cli": {
+  "n": 98,
+  "name": "Mermaid CLI",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'mmdc -i input.mmd -o output.svg'"
+   },
+   {
+    "field": "official_mcp",
+    "check": "grounding",
+    "severity": "error",
+    "detail": "quote not found in https://github.com/andrewginns/mermaid-mcp-server"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "ai.smithery/hustcc-mcp-mermaid",
+    "com.mermaidchart/mermaid-mcp",
+    "io.github.adewale/agentic-mermaid",
+    "io.github.alphaparkinc/genpark-markdown-mermaid-syntax-lint-healer-skill",
+    "io.github.faithdrivencreator/mermaid-chart-renderer",
+    "io.github.finfin/mermaid-mcp-app",
+    "io.github.j-river/mermaidonline",
+    "io.github.tci-nebula/mermaid-render-mcp"
+   ]
+  },
+  "composio_toolkits": []
+ },
+ "youtube-transcript": {
+  "n": 99,
+  "name": "YouTube Transcript",
+  "flags": [
+   {
+    "field": "api_styles",
+    "check": "support",
+    "severity": "warn",
+    "detail": "quote does not mention api styles: 'The YouTube Transcript API provides a simple and reliable way to extract transcripts from '"
+   }
+  ],
+  "mcp": {
+   "registry_official": [
+    "com.transcriptapi/youtube-transcript-and-youtube-search"
+   ],
+   "registry_community": [
+    "ai.agentapigate/youtube-transcript-video-subtitles-search-mcp",
+    "ai.agentapihub/youtube-transcript-video-subtitles-search-mcp",
+    "ai.livecore/video-editor-ai-video-editing-edit-video-captions-subtitles-srt-transcribe-transcription-tiktok-youtube-shorts-instagram-reels-podcast-multicam-interview-viral-clips-highlight",
+    "ai.smithery/kirbah-mcp-youtube",
+    "ai.trendsapi/youtube",
+    "ai.trendsmcp/youtube",
+    "ai.wondel/youtube",
+    "ai.youtube-transcript/youtube-transcript",
+    "ai.youtubetotext/youtubetotext",
+    "click.myagents/youtube",
+    "click.myagents/youtube-publish",
+    "co.bibigpt/youtube-video-summarizer",
+    "co.bulktranscripts/youtube",
+    "com.52choujiang/youtube-insights",
+    "com.dapdip/youtube-growth"
+   ]
+  },
+  "composio_toolkits": [
+   "youtube_transcript"
+  ]
+ },
+ "grain": {
+  "n": 100,
+  "name": "Grain",
+  "flags": [
+   {
+    "field": "main_blocker",
+    "check": "unknown",
+    "severity": "info",
+    "detail": "no supported value"
+   },
+   {
+    "field": "official_mcp",
+    "check": "mcp_registry",
+    "severity": "warn",
+    "detail": "agent says official MCP; not in registry; evidence https://developers.grain.com/mcp"
+   }
+  ],
+  "mcp": {
+   "registry_official": [],
+   "registry_community": [
+    "com.grain64.billtrim/billtrim",
+    "com.grain64.clearbar/verdicts",
+    "com.grain64.deskhand/deskhand",
+    "com.grain64.friction/friction",
+    "com.grain64.leaklens/leaklens",
+    "com.grain64.sitecite/sitecite",
+    "com.grain64/clearbar",
+    "com.grain64/friction",
+    "com.purplegrain/api",
+    "com.scriptgrain/scriptgrain",
+    "com.wavegrain/mcp",
+    "fr.grainequipousse/graine-qui-pousse",
+    "io.github.Evozim/chicago-grain-prices-mcp",
+    "io.github.SingleGrain-Team/singlebrain-gateway",
+    "io.github.mrfentmen/grain-mcp"
+   ]
+  },
+  "composio_toolkits": [
+   "grain"
+  ]
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "seed": 20261123,
+ "per_category": 2,
+ "ids": [
+  "otter-ai",
+  "youtube-transcript",
+  "copper",
+  "zoho-crm",
+  "discord",
+  "whatsapp-business",
+  "mrscraper",
+  "sherlock",
+  "github",
+  "sentry",
+  "amazon-selling-partner",
+  "bigcommerce",
+  "brex",
+  "quickbooks",
+  "google-ads",
+  "mailchimp",
+  "airtable",
+  "harvest",
+  "intercom",
+  "plain"
+ ]
+}

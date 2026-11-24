@@ -1,0 +1,35 @@
+{
+ "sample": "20 apps, 2 per category, seed 20261123",
+ "fields_labelled": 199,
+ "labeller": "AI assistant from live vendor docs (2026-11-23)",
+ "audit": {
+  "items": 5,
+  "agreed": 5,
+  "by": "user",
+  "note": "random draw, seed 20261124; n=5 is too small to estimate label error rate"
+ },
+ "variants": [
+  {
+   "name": "pass1 (frozen)",
+   "correct": 182,
+   "total": 199,
+   "accuracy": 0.9146,
+   "file": "data/pass1_frozen.jsonl"
+  },
+  {
+   "name": "repair v1: wipe unproven to unknown",
+   "correct": 178,
+   "total": 199,
+   "accuracy": 0.8945,
+   "file": "data/pass2_v1_drop.jsonl"
+  },
+  {
+   "name": "repair v2: keep original if unproven (post-hoc fix, found on this sample)",
+   "correct": 183,
+   "total": 199,
+   "accuracy": 0.9196,
+   "file": "data/pass2.jsonl"
+  }
+ ],
+ "caveat": "v2 was designed after seeing v1's regressions on this same sample, so its number is optimistic."
+}

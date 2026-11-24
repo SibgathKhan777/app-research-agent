@@ -1,0 +1,14 @@
+{
+ "file": "data/pass1_frozen.jsonl",
+ "sha256": "651260b2728db950518b48c27cd01bc4a981a6fc65e6791ece4d8b2a5e7eafb8",
+ "frozen_at": "2026-11-23T22:57:50+05:30",
+ "apps": 100,
+ "extract_model": "hosted LLM run through a local command-line client (display name relabelled 'hosted-llm-1' at publish), effort=medium",
+ "search": "Tavily via Composio (Grain: cache + direct probe after Tavily quota ran out)",
+ "auto_check": {
+  "quotes_grounded": "771/894",
+  "unknown_fields": "106/1000"
+ },
+ "note": "Pass 1 is frozen: verification writes pass 2 to separate files; this file is never edited. At publish only the extract_model label was relabelled; sha256_before_relabel is the hash of the file before that.",
+ "sha256_before_relabel": "9459fe230f3e0a791b4cc66091eae47355e8ae45dee2a798dc13a5f63abd8659"
+}

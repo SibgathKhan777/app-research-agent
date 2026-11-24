@@ -1,0 +1,9 @@
+composio==0.34.0
+groq==1.7.0
+httpx==0.28.1
+pydantic==2.14.4
+python-dotenv==1.2.4
+PyYAML==6.0.4
+rank-bm25==0.2.2
+trafilatura==2.3.1
+pytest==9.2.0

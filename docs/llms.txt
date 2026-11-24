@@ -1,0 +1,11 @@
+# Integration-readiness research: 100 apps
+
+> For each of 100 SaaS and developer apps: auth methods, self-serve vs gated access, API surface, MCP, buildability verdict and the main blocker, each with an evidence URL and verbatim quote.
+
+- [results.json](data/results.json): full records with per-field evidence
+- [results.csv](data/results.csv): flat table
+- [patterns.json](data/patterns.json): cross-app counts
+- [human_labels.csv](data/human_labels.csv): hand-checked reference labels for the 20-app sample
+- [accuracy.json](data/accuracy.json): measured accuracy per variant
+
+Accuracy: see index.html. Hand-checked sample accuracy 92.0% on 199 fields (n=20 apps); values are claims with evidence, not guarantees.

@@ -1,0 +1,251 @@
+{
+ "n": 100,
+ "categories": [
+  "AI, Research and Media-native",
+  "CRM and Sales",
+  "Communications and Messaging",
+  "Data, SEO and Scraping",
+  "Developer, Infra and Data platforms",
+  "Ecommerce",
+  "Finance and Fintech",
+  "Marketing, Ads, Email and Social",
+  "Productivity and Project Management",
+  "Support and Helpdesk"
+ ],
+ "auth_counts": {
+  "oauth2": 83,
+  "api_key": 73,
+  "bearer_token": 57,
+  "basic": 22,
+  "jwt": 8,
+  "other": 2,
+  "none": 2
+ },
+ "auth_combo": {
+  "api_key+bearer_token+oauth2": 25,
+  "api_key+oauth2": 21,
+  "bearer_token+oauth2": 11,
+  "api_key+basic+bearer_token+oauth2": 9,
+  "oauth2": 4,
+  "api_key": 4
+ },
+ "tier_counts": {
+  "self_serve_free": 59,
+  "self_serve_trial": 18,
+  "paid_plan": 10,
+  "contact_sales": 7,
+  "admin_approval": 4,
+  "unknown": 2
+ },
+ "buildability_counts": {
+  "ready_with_friction": 53,
+  "ready": 37,
+  "blocked": 10
+ },
+ "blocker_counts": {
+  "none": 37,
+  "paid_plan_required": 30,
+  "app_review_or_approval": 16,
+  "other": 8,
+  "partner_or_sales_gate": 4,
+  "enterprise_only": 2,
+  "local_only_tool": 2,
+  "no_public_api": 1
+ },
+ "delivery_counts": {
+  "hosted_api": 97,
+  "local_cli": 2,
+  "no_public_api": 1
+ },
+ "style_counts": {
+  "rest": 95,
+  "graphql": 13,
+  "sdk_only": 10,
+  "websocket": 8,
+  "rpc": 5,
+  "soap": 1
+ },
+ "by_category": {
+  "AI, Research and Media-native": {
+   "n": 10,
+   "self_serve_free": 6,
+   "trial": 0,
+   "gated": 4,
+   "ready": 4,
+   "friction": 5,
+   "blocked": 1,
+   "mcp": 7,
+   "oauth2": 7
+  },
+  "CRM and Sales": {
+   "n": 10,
+   "self_serve_free": 5,
+   "trial": 4,
+   "gated": 1,
+   "ready": 2,
+   "friction": 7,
+   "blocked": 1,
+   "mcp": 9,
+   "oauth2": 10
+  },
+  "Communications and Messaging": {
+   "n": 10,
+   "self_serve_free": 9,
+   "trial": 1,
+   "gated": 0,
+   "ready": 7,
+   "friction": 3,
+   "blocked": 0,
+   "mcp": 8,
+   "oauth2": 10
+  },
+  "Data, SEO and Scraping": {
+   "n": 10,
+   "self_serve_free": 6,
+   "trial": 2,
+   "gated": 2,
+   "ready": 5,
+   "friction": 5,
+   "blocked": 0,
+   "mcp": 8,
+   "oauth2": 6
+  },
+  "Developer, Infra and Data platforms": {
+   "n": 10,
+   "self_serve_free": 8,
+   "trial": 1,
+   "gated": 0,
+   "ready": 7,
+   "friction": 3,
+   "blocked": 0,
+   "mcp": 10,
+   "oauth2": 10
+  },
+  "Ecommerce": {
+   "n": 10,
+   "self_serve_free": 5,
+   "trial": 1,
+   "gated": 4,
+   "ready": 1,
+   "friction": 7,
+   "blocked": 2,
+   "mcp": 6,
+   "oauth2": 8
+  },
+  "Finance and Fintech": {
+   "n": 10,
+   "self_serve_free": 5,
+   "trial": 1,
+   "gated": 3,
+   "ready": 2,
+   "friction": 5,
+   "blocked": 3,
+   "mcp": 9,
+   "oauth2": 8
+  },
+  "Marketing, Ads, Email and Social": {
+   "n": 10,
+   "self_serve_free": 6,
+   "trial": 2,
+   "gated": 2,
+   "ready": 3,
+   "friction": 7,
+   "blocked": 0,
+   "mcp": 6,
+   "oauth2": 8
+  },
+  "Productivity and Project Management": {
+   "n": 10,
+   "self_serve_free": 9,
+   "trial": 0,
+   "gated": 1,
+   "ready": 6,
+   "friction": 3,
+   "blocked": 1,
+   "mcp": 10,
+   "oauth2": 9
+  },
+  "Support and Helpdesk": {
+   "n": 10,
+   "self_serve_free": 0,
+   "trial": 6,
+   "gated": 4,
+   "ready": 0,
+   "friction": 8,
+   "blocked": 2,
+   "mcp": 9,
+   "oauth2": 7
+  }
+ },
+ "mcp_yes": 82,
+ "mcp_registry_confirmed": 24,
+ "composio_covered": 69,
+ "composio_gap_ready": [
+  "Amazon Selling Partner",
+  "Binance",
+  "Bright Data",
+  "Ecwid",
+  "GoHighLevel",
+  "Google Ads",
+  "Lark (Larksuite)",
+  "LiveAgent",
+  "Magento (Adobe Commerce)",
+  "Mermaid CLI",
+  "Meta Ads",
+  "Monday.com",
+  "MongoDB Atlas",
+  "NotebookLM",
+  "Reducto",
+  "SE Ranking",
+  "Sherlock",
+  "Squarespace",
+  "Threads (Meta)",
+  "Vonage",
+  "Waterfall.io",
+  "WhatsApp Business",
+  "WooCommerce",
+  "Zoho CRM",
+  "systeme.io"
+ ],
+ "easy_wins": [
+  "Bright Data",
+  "Lark (Larksuite)",
+  "MongoDB Atlas",
+  "Reducto",
+  "Vonage",
+  "systeme.io"
+ ],
+ "blocked_apps": [
+  "DealCloud",
+  "Gladly",
+  "Otter AI",
+  "Paygent Connect",
+  "PitchBook",
+  "Pylon",
+  "Salesforce Commerce Cloud",
+  "Smartsheet",
+  "fanbasis",
+  "iPayX"
+ ],
+ "needs_human": 75,
+ "oauth_only": 4,
+ "oauth_and_key": 62,
+ "free_and_mcp": 48,
+ "free_ready": 36,
+ "review_blocker_oauth": 15,
+ "review_blocker": 16,
+ "openapi_yes": 34,
+ "openapi_unknown": 54,
+ "gated_total": 21,
+ "most_gated_category": "Support and Helpdesk",
+ "most_open_category": "Productivity and Project Management",
+ "most_mcp_category": "Productivity and Project Management",
+ "headlines": [
+  "83% of the 100 apps accept OAuth 2, 73% accept an API key or token, and 62 accept both. OAuth 2 is close to universal; the key or token is what makes a single-account integration quick to start.",
+  "59 apps look free to start (treat as an upper bound: on the hand-checked sample the commonest error was calling a gated API free); 21 need a paid plan, approval, a partnership or sales; 18 are trial-only. Support and Helpdesk is the most gated category.",
+  "Only 37 apps are clean 'build it today'; 53 are buildable with friction and 10 are blocked. The most common blocker is 'paid plan required' (30 apps).",
+  "82 apps are said to document an official MCP server, but only 24 are confirmed in the official MCP registry (the rest rely on the vendor's own docs). Productivity and Project Management leads. Either way, an MCP server is now common for SaaS.",
+  "16 apps put their gate at app review, not at signup: you can get a token in minutes and still not ship to other users. OpenAPI specs are public for only 34 apps, so 'generate the toolkit from a spec' works for a minority.",
+  "69 of 100 already have a Composio toolkit (slug match); 25 buildable apps do not, 6 of them clean 'ready': that list is the backlog."
+ ]
+}

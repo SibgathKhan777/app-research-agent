@@ -1,0 +1,33 @@
+{
+ "otter-ai": [
+  "auth_methods",
+  "access_tier",
+  "api_breadth",
+  "buildability",
+  "main_blocker"
+ ],
+ "youtube-transcript": [
+  "auth_methods",
+  "api_breadth"
+ ],
+ "copper": [
+  "api_breadth"
+ ],
+ "zoho-crm": [
+  "api_breadth",
+  "openapi_spec",
+  "buildability",
+  "main_blocker"
+ ],
+ "discord": [
+  "auth_methods",
+  "access_tier",
+  "api_styles",
+  "api_breadth"
+ ],
+ "whatsapp-business": [
+  "auth_methods",
+  "access_tier",
+  "api_breadth"
+ ]
+}

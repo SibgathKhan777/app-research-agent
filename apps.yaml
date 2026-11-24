@@ -1,0 +1,822 @@
+- n: 1
+  id: salesforce
+  name: Salesforce
+  category: CRM and Sales
+  hint: salesforce.com
+  note: ''
+  domains:
+  - salesforce.com
+  - force.com
+- n: 2
+  id: hubspot
+  name: HubSpot
+  category: CRM and Sales
+  hint: hubspot.com
+  note: ''
+  domains:
+  - hubspot.com
+- n: 3
+  id: pipedrive
+  name: Pipedrive
+  category: CRM and Sales
+  hint: pipedrive.com
+  note: ''
+  domains:
+  - pipedrive.com
+- n: 4
+  id: attio
+  name: Attio
+  category: CRM and Sales
+  hint: attio.com
+  note: ''
+  domains:
+  - attio.com
+- n: 5
+  id: twenty
+  name: Twenty
+  category: CRM and Sales
+  hint: twenty.com
+  note: open-source CRM
+  domains:
+  - twenty.com
+- n: 6
+  id: podio
+  name: Podio
+  category: CRM and Sales
+  hint: podio.com
+  note: ''
+  domains:
+  - podio.com
+- n: 7
+  id: zoho-crm
+  name: Zoho CRM
+  category: CRM and Sales
+  hint: zoho.com/crm
+  note: ''
+  domains:
+  - zoho.com
+- n: 8
+  id: close
+  name: Close
+  category: CRM and Sales
+  hint: close.com
+  note: ''
+  domains:
+  - close.com
+- n: 9
+  id: copper
+  name: Copper
+  category: CRM and Sales
+  hint: copper.com
+  note: ''
+  domains:
+  - copper.com
+- n: 10
+  id: dealcloud
+  name: DealCloud
+  category: CRM and Sales
+  hint: api.docs.dealcloud.com
+  note: ''
+  domains:
+  - dealcloud.com
+- n: 11
+  id: zendesk
+  name: Zendesk
+  category: Support and Helpdesk
+  hint: zendesk.com
+  note: ''
+  domains:
+  - zendesk.com
+- n: 12
+  id: intercom
+  name: Intercom
+  category: Support and Helpdesk
+  hint: intercom.com
+  note: ''
+  domains:
+  - intercom.com
+- n: 13
+  id: freshdesk
+  name: Freshdesk
+  category: Support and Helpdesk
+  hint: freshdesk.com
+  note: ''
+  domains:
+  - freshdesk.com
+- n: 14
+  id: front
+  name: Front
+  category: Support and Helpdesk
+  hint: front.com
+  note: ''
+  domains:
+  - front.com
+- n: 15
+  id: pylon
+  name: Pylon
+  category: Support and Helpdesk
+  hint: usepylon.com
+  note: ''
+  domains:
+  - usepylon.com
+- n: 16
+  id: liveagent
+  name: LiveAgent
+  category: Support and Helpdesk
+  hint: liveagent.com
+  note: ''
+  domains:
+  - liveagent.com
+- n: 17
+  id: plain
+  name: Plain
+  category: Support and Helpdesk
+  hint: plain.com
+  note: ''
+  domains:
+  - plain.com
+- n: 18
+  id: help-scout
+  name: Help Scout
+  category: Support and Helpdesk
+  hint: helpscout.com
+  note: ''
+  domains:
+  - helpscout.com
+- n: 19
+  id: gorgias
+  name: Gorgias
+  category: Support and Helpdesk
+  hint: gorgias.com
+  note: ''
+  domains:
+  - gorgias.com
+- n: 20
+  id: gladly
+  name: Gladly
+  category: Support and Helpdesk
+  hint: gladly.com
+  note: ''
+  domains:
+  - gladly.com
+- n: 21
+  id: slack
+  name: Slack
+  category: Communications and Messaging
+  hint: slack.com
+  note: ''
+  domains:
+  - slack.com
+- n: 22
+  id: twilio
+  name: Twilio
+  category: Communications and Messaging
+  hint: twilio.com
+  note: ''
+  domains:
+  - twilio.com
+- n: 23
+  id: zoho-cliq
+  name: Zoho Cliq
+  category: Communications and Messaging
+  hint: zoho.com/cliq
+  note: ''
+  domains:
+  - zoho.com
+- n: 24
+  id: lark-larksuite
+  name: Lark (Larksuite)
+  category: Communications and Messaging
+  hint: open.larksuite.com
+  note: ''
+  domains:
+  - larksuite.com
+  - feishu.cn
+- n: 25
+  id: pumble
+  name: Pumble
+  category: Communications and Messaging
+  hint: pumble.com
+  note: ''
+  domains:
+  - pumble.com
+- n: 26
+  id: discord
+  name: Discord
+  category: Communications and Messaging
+  hint: discord.com
+  note: ''
+  domains:
+  - discord.com
+- n: 27
+  id: telegram
+  name: Telegram
+  category: Communications and Messaging
+  hint: core.telegram.org
+  note: ''
+  domains:
+  - telegram.org
+- n: 28
+  id: whatsapp-business
+  name: WhatsApp Business
+  category: Communications and Messaging
+  hint: developers.facebook.com/docs/whatsapp
+  note: ''
+  domains:
+  - facebook.com
+  - whatsapp.com
+  - meta.com
+- n: 29
+  id: aircall
+  name: Aircall
+  category: Communications and Messaging
+  hint: aircall.io
+  note: ''
+  domains:
+  - aircall.io
+- n: 30
+  id: vonage
+  name: Vonage
+  category: Communications and Messaging
+  hint: developer.vonage.com
+  note: ''
+  domains:
+  - vonage.com
+- n: 31
+  id: google-ads
+  name: Google Ads
+  category: Marketing, Ads, Email and Social
+  hint: developers.google.com/google-ads
+  note: ''
+  domains:
+  - google.com
+- n: 32
+  id: meta-ads
+  name: Meta Ads
+  category: Marketing, Ads, Email and Social
+  hint: developers.facebook.com/docs/marketing-apis
+  note: ''
+  domains:
+  - facebook.com
+  - meta.com
+- n: 33
+  id: linkedin-ads
+  name: LinkedIn Ads
+  category: Marketing, Ads, Email and Social
+  hint: learn.microsoft.com/linkedin/marketing
+  note: ''
+  domains:
+  - linkedin.com
+  - microsoft.com
+- n: 34
+  id: gohighlevel
+  name: GoHighLevel
+  category: Marketing, Ads, Email and Social
+  hint: highlevel.stoplight.io
+  note: ''
+  domains:
+  - gohighlevel.com
+  - highlevel.stoplight.io
+  - leadconnectorhq.com
+  - stoplight.io
+- n: 35
+  id: mailchimp
+  name: Mailchimp
+  category: Marketing, Ads, Email and Social
+  hint: mailchimp.com/developer
+  note: ''
+  domains:
+  - mailchimp.com
+- n: 36
+  id: klaviyo
+  name: Klaviyo
+  category: Marketing, Ads, Email and Social
+  hint: developers.klaviyo.com
+  note: ''
+  domains:
+  - klaviyo.com
+- n: 37
+  id: systeme-io
+  name: systeme.io
+  category: Marketing, Ads, Email and Social
+  hint: systeme.io
+  note: funnel builder
+  domains:
+  - systeme.io
+- n: 38
+  id: pinterest
+  name: Pinterest
+  category: Marketing, Ads, Email and Social
+  hint: developers.pinterest.com
+  note: ''
+  domains:
+  - pinterest.com
+- n: 39
+  id: threads-meta
+  name: Threads (Meta)
+  category: Marketing, Ads, Email and Social
+  hint: developers.facebook.com/docs/threads
+  note: ''
+  domains:
+  - facebook.com
+  - threads.net
+  - threads.com
+  - meta.com
+- n: 40
+  id: sendgrid
+  name: SendGrid
+  category: Marketing, Ads, Email and Social
+  hint: sendgrid.com
+  note: ''
+  domains:
+  - sendgrid.com
+  - twilio.com
+- n: 41
+  id: shopify
+  name: Shopify
+  category: Ecommerce
+  hint: shopify.dev
+  note: ''
+  domains:
+  - shopify.dev
+- n: 42
+  id: woocommerce
+  name: WooCommerce
+  category: Ecommerce
+  hint: woocommerce.com/document/woocommerce-rest-api
+  note: ''
+  domains:
+  - woocommerce.com
+- n: 43
+  id: bigcommerce
+  name: BigCommerce
+  category: Ecommerce
+  hint: developer.bigcommerce.com
+  note: ''
+  domains:
+  - bigcommerce.com
+- n: 44
+  id: salesforce-commerce-cloud
+  name: Salesforce Commerce Cloud
+  category: Ecommerce
+  hint: developer.salesforce.com/docs/commerce
+  note: ''
+  domains:
+  - salesforce.com
+  - commercecloud.salesforce.com
+- n: 45
+  id: magento-adobe-commerce
+  name: Magento (Adobe Commerce)
+  category: Ecommerce
+  hint: developer.adobe.com/commerce
+  note: ''
+  domains:
+  - adobe.com
+  - magento.com
+- n: 46
+  id: squarespace
+  name: Squarespace
+  category: Ecommerce
+  hint: developers.squarespace.com
+  note: ''
+  domains:
+  - squarespace.com
+- n: 47
+  id: ecwid
+  name: Ecwid
+  category: Ecommerce
+  hint: api-docs.ecwid.com
+  note: ''
+  domains:
+  - ecwid.com
+- n: 48
+  id: gumroad
+  name: Gumroad
+  category: Ecommerce
+  hint: gumroad.com/api
+  note: ''
+  domains:
+  - gumroad.com
+- n: 49
+  id: amazon-selling-partner
+  name: Amazon Selling Partner
+  category: Ecommerce
+  hint: developer-docs.amazon.com/sp-api
+  note: ''
+  domains:
+  - amazon.com
+  - amazonservices.com
+- n: 50
+  id: fanbasis
+  name: fanbasis
+  category: Ecommerce
+  hint: fanbasis.com
+  note: ''
+  domains:
+  - fanbasis.com
+- n: 51
+  id: dataforseo
+  name: DataForSEO
+  category: Data, SEO and Scraping
+  hint: docs.dataforseo.com
+  note: ''
+  domains:
+  - dataforseo.com
+- n: 52
+  id: se-ranking
+  name: SE Ranking
+  category: Data, SEO and Scraping
+  hint: seranking.com/api
+  note: ''
+  domains:
+  - seranking.com
+- n: 53
+  id: ahrefs
+  name: Ahrefs
+  category: Data, SEO and Scraping
+  hint: ahrefs.com/api
+  note: ''
+  domains:
+  - ahrefs.com
+- n: 54
+  id: mrscraper
+  name: MrScraper
+  category: Data, SEO and Scraping
+  hint: docs.mrscraper.com
+  note: ''
+  domains:
+  - mrscraper.com
+- n: 55
+  id: apify
+  name: Apify
+  category: Data, SEO and Scraping
+  hint: docs.apify.com
+  note: ''
+  domains:
+  - apify.com
+- n: 56
+  id: firecrawl
+  name: Firecrawl
+  category: Data, SEO and Scraping
+  hint: firecrawl.dev
+  note: ''
+  domains:
+  - firecrawl.dev
+- n: 57
+  id: bright-data
+  name: Bright Data
+  category: Data, SEO and Scraping
+  hint: brightdata.com
+  note: ''
+  domains:
+  - brightdata.com
+- n: 58
+  id: sherlock
+  name: Sherlock
+  category: Data, SEO and Scraping
+  hint: github.com/sherlock-project/sherlock
+  note: ''
+  domains:
+  - github.com/sherlock-project
+- n: 59
+  id: waterfall-io
+  name: Waterfall.io
+  category: Data, SEO and Scraping
+  hint: waterfall.io
+  note: contact/company intel
+  domains:
+  - waterfall.io
+- n: 60
+  id: clay
+  name: Clay
+  category: Data, SEO and Scraping
+  hint: clay.com
+  note: ''
+  domains:
+  - clay.com
+- n: 61
+  id: github
+  name: GitHub
+  category: Developer, Infra and Data platforms
+  hint: docs.github.com/rest
+  note: ''
+  domains:
+  - github.com
+- n: 62
+  id: vercel
+  name: Vercel
+  category: Developer, Infra and Data platforms
+  hint: vercel.com/docs/rest-api
+  note: ''
+  domains:
+  - vercel.com
+- n: 63
+  id: netlify
+  name: Netlify
+  category: Developer, Infra and Data platforms
+  hint: docs.netlify.com/api
+  note: ''
+  domains:
+  - netlify.com
+- n: 64
+  id: cloudflare
+  name: Cloudflare
+  category: Developer, Infra and Data platforms
+  hint: developers.cloudflare.com/api
+  note: ''
+  domains:
+  - cloudflare.com
+- n: 65
+  id: supabase
+  name: Supabase
+  category: Developer, Infra and Data platforms
+  hint: supabase.com/docs
+  note: ''
+  domains:
+  - supabase.com
+- n: 66
+  id: neo4j
+  name: Neo4j
+  category: Developer, Infra and Data platforms
+  hint: neo4j.com/docs/api
+  note: ''
+  domains:
+  - neo4j.com
+- n: 67
+  id: snowflake
+  name: Snowflake
+  category: Developer, Infra and Data platforms
+  hint: docs.snowflake.com
+  note: ''
+  domains:
+  - snowflake.com
+- n: 68
+  id: mongodb-atlas
+  name: MongoDB Atlas
+  category: Developer, Infra and Data platforms
+  hint: mongodb.com/docs/atlas/api
+  note: ''
+  domains:
+  - mongodb.com
+- n: 69
+  id: datadog
+  name: Datadog
+  category: Developer, Infra and Data platforms
+  hint: docs.datadoghq.com/api
+  note: ''
+  domains:
+  - datadoghq.com
+- n: 70
+  id: sentry
+  name: Sentry
+  category: Developer, Infra and Data platforms
+  hint: docs.sentry.io/api
+  note: ''
+  domains:
+  - sentry.io
+- n: 71
+  id: notion
+  name: Notion
+  category: Productivity and Project Management
+  hint: developers.notion.com
+  note: ''
+  domains:
+  - notion.com
+- n: 72
+  id: airtable
+  name: Airtable
+  category: Productivity and Project Management
+  hint: airtable.com/developers
+  note: ''
+  domains:
+  - airtable.com
+- n: 73
+  id: linear
+  name: Linear
+  category: Productivity and Project Management
+  hint: developers.linear.app
+  note: ''
+  domains:
+  - linear.app
+- n: 74
+  id: jira
+  name: Jira
+  category: Productivity and Project Management
+  hint: developer.atlassian.com
+  note: ''
+  domains:
+  - atlassian.com
+- n: 75
+  id: asana
+  name: Asana
+  category: Productivity and Project Management
+  hint: developers.asana.com
+  note: ''
+  domains:
+  - asana.com
+- n: 76
+  id: monday-com
+  name: Monday.com
+  category: Productivity and Project Management
+  hint: developer.monday.com
+  note: ''
+  domains:
+  - monday.com
+- n: 77
+  id: clickup
+  name: ClickUp
+  category: Productivity and Project Management
+  hint: clickup.com/api
+  note: ''
+  domains:
+  - clickup.com
+- n: 78
+  id: coda
+  name: Coda
+  category: Productivity and Project Management
+  hint: coda.io/developers
+  note: ''
+  domains:
+  - coda.io
+- n: 79
+  id: smartsheet
+  name: Smartsheet
+  category: Productivity and Project Management
+  hint: smartsheet.com/developers
+  note: ''
+  domains:
+  - smartsheet.com
+- n: 80
+  id: harvest
+  name: Harvest
+  category: Productivity and Project Management
+  hint: harvestapp.com
+  note: help.getharvest.com/api-v2
+  domains:
+  - getharvest.com
+  - harvestapp.com
+- n: 81
+  id: stripe
+  name: Stripe
+  category: Finance and Fintech
+  hint: stripe.com/docs/api
+  note: ''
+  domains:
+  - stripe.com
+- n: 82
+  id: plaid
+  name: Plaid
+  category: Finance and Fintech
+  hint: plaid.com/docs
+  note: ''
+  domains:
+  - plaid.com
+- n: 83
+  id: binance
+  name: Binance
+  category: Finance and Fintech
+  hint: binance-docs.github.io
+  note: ''
+  domains:
+  - binance.com
+  - binance-docs.github.io
+- n: 84
+  id: paygent-connect
+  name: Paygent Connect
+  category: Finance and Fintech
+  hint: paygent
+  note: NMI-powered
+  domains:
+  - paygent.com
+  - nmi.com
+  - paygentconnect.com
+- n: 85
+  id: ipayx
+  name: iPayX
+  category: Finance and Fintech
+  hint: ipayx.ai/docs
+  note: ''
+  domains:
+  - ipayx.ai
+- n: 86
+  id: quickbooks
+  name: QuickBooks
+  category: Finance and Fintech
+  hint: developer.intuit.com
+  note: ''
+  domains:
+  - intuit.com
+- n: 87
+  id: xero
+  name: Xero
+  category: Finance and Fintech
+  hint: developer.xero.com
+  note: ''
+  domains:
+  - xero.com
+- n: 88
+  id: brex
+  name: Brex
+  category: Finance and Fintech
+  hint: developer.brex.com
+  note: ''
+  domains:
+  - brex.com
+- n: 89
+  id: ramp
+  name: Ramp
+  category: Finance and Fintech
+  hint: docs.ramp.com
+  note: ''
+  domains:
+  - ramp.com
+- n: 90
+  id: pitchbook
+  name: PitchBook
+  category: Finance and Fintech
+  hint: pitchbook.com
+  note: research API
+  domains:
+  - pitchbook.com
+- n: 91
+  id: notebooklm
+  name: NotebookLM
+  category: AI, Research and Media-native
+  hint: cloud.google.com/gemini
+  note: Enterprise API
+  domains:
+  - google.com
+- n: 92
+  id: otter-ai
+  name: Otter AI
+  category: AI, Research and Media-native
+  hint: help.otter.ai
+  note: MCP server
+  domains:
+  - otter.ai
+- n: 93
+  id: fathom
+  name: Fathom
+  category: AI, Research and Media-native
+  hint: fathom.video
+  note: ''
+  domains:
+  - fathom.video
+- n: 94
+  id: consensus
+  name: Consensus
+  category: AI, Research and Media-native
+  hint: consensus.app
+  note: OAuth requested
+  domains:
+  - consensus.app
+- n: 95
+  id: reducto
+  name: Reducto
+  category: AI, Research and Media-native
+  hint: reducto.ai
+  note: document parsing
+  domains:
+  - reducto.ai
+- n: 96
+  id: devin
+  name: Devin
+  category: AI, Research and Media-native
+  hint: docs.devin.ai
+  note: MCP
+  domains:
+  - devin.ai
+  - cognition.ai
+- n: 97
+  id: higgsfield
+  name: higgsfield
+  category: AI, Research and Media-native
+  hint: higgsfield.ai/cli
+  note: content suite
+  domains:
+  - higgsfield.ai
+- n: 98
+  id: mermaid-cli
+  name: Mermaid CLI
+  category: AI, Research and Media-native
+  hint: github.com/mermaid-js/mermaid-cli
+  note: ''
+  domains:
+  - github.com/mermaid-js
+  - mermaid.js.org
+- n: 99
+  id: youtube-transcript
+  name: YouTube Transcript
+  category: AI, Research and Media-native
+  hint: transcriptapi.com
+  note: ''
+  domains:
+  - transcriptapi.com
+- n: 100
+  id: grain
+  name: Grain
+  category: AI, Research and Media-native
+  hint: grain.com
+  note: meeting notes
+  domains:
+  - grain.com

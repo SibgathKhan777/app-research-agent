@@ -1,0 +1,42 @@
+name: research-one
+# Research any single app end to end and print its record with evidence.
+on:
+  workflow_dispatch:
+    inputs:
+      app:
+        description: 'App as "Name|domain.com" (e.g. Linear|linear.app) or an id from apps.yaml (e.g. notion)'
+        required: true
+        default: "Linear|linear.app"
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      COMPOSIO_API_KEY: ${{ secrets.COMPOSIO_API_KEY }}
+      TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      MODEL_ROTATION: openai/gpt-oss-120b
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - name: Research
+        env:
+          APP: ${{ github.event.inputs.app }}
+        run: |
+          if [[ "$APP" == *"|"* ]]; then python -m research.run --custom "$APP" --out out.jsonl; else python -m research.run --app "$APP" --out out.jsonl; fi
+      - name: Show record
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import glob, json
+          path = (glob.glob("data/custom_*.jsonl") + ["out.jsonl"])[0]
+          r = json.loads(open(path).readline())
+          print(f"## {r['name']}\n{r['one_liner']['value']}\n\n| field | value | evidence |\n|---|---|---|")
+          for f in ["auth_methods","access_tier","delivery","api_styles","api_breadth","openapi_spec","official_mcp","buildability","main_blocker"]:
+              c = r[f]; ev = c["evidence"][0] if c["evidence"] else None
+              q = f'"{ev["quote"][:140]}" ({ev["url"]})' if ev else "-"
+              print(f"| {f} | {c['value']} | {q.replace('|','/')} |")
+          PY
+      - uses: actions/upload-artifact@v4
+        with: { name: record, path: "out.jsonl\ndata/custom_*.jsonl", if-no-files-found: ignore }

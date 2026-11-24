@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>100 Apps, Researched by an Agent</title>
+<meta name="description" content="An agent researched auth, access gating, API surface, MCP and buildability for 100 apps, then checked its own work. Findings, patterns, and an honest accuracy report.">
+<style>
+:root{--bg:#fbfaf7;--surface:#fff;--ink:#1d1b16;--muted:#6b665b;--line:#e4e0d6;--accent:#2f5d50;--accent-soft:#e3eee9;
+--ok:#2f7d4f;--warn:#b7791f;--bad:#b4412f;--ok-bg:#e1f1e7;--warn-bg:#f7ecd3;--bad-bg:#f6dfda;--info-bg:#e6ecf5;--info:#365a8c}
+:root[data-theme=dark]{--bg:#161512;--surface:#1f1d19;--ink:#ece8de;--muted:#a39d8f;--line:#38342c;--accent:#7fc0a8;--accent-soft:#25332e;
+--ok:#7fcf9c;--warn:#e0b25a;--bad:#e6917f;--ok-bg:#1f3327;--warn-bg:#382f1a;--bad-bg:#3c2420;--info-bg:#212c3f;--info:#8db3e8}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161512;--surface:#1f1d19;--ink:#ece8de;--muted:#a39d8f;--line:#38342c;--accent:#7fc0a8;--accent-soft:#25332e;
+--ok:#7fcf9c;--warn:#e0b25a;--bad:#e6917f;--ok-bg:#1f3327;--warn-bg:#382f1a;--bad-bg:#3c2420;--info-bg:#212c3f;--info:#8db3e8}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+h1{font:700 clamp(1.8rem,5vw,2.8rem)/1.1 Georgia,"Times New Roman",serif;margin:0 0 .4em;letter-spacing:-.01em}
+h2{font:700 1.5rem/1.2 Georgia,serif;margin:0 0 .3em}h3{margin:1.2em 0 .3em;font-size:1rem}
+p{margin:.4em 0 .8em}a{color:var(--accent)}code,pre{font:13px/1.5 ui-monospace,Menlo,Consolas,monospace}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px;overflow:auto}
+header.top{padding:40px 0 20px;border-bottom:1px solid var(--line)}
+.lede{font-size:1.1rem;max-width:62ch;color:var(--muted)}
+nav.toc{display:flex;gap:6px 14px;flex-wrap:wrap;margin-top:14px;font-size:.9rem}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0 4px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.stat b{display:block;font:700 1.9rem/1 Georgia,serif;color:var(--accent)}.stat span{font-size:.82rem;color:var(--muted)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.finding{display:grid;grid-template-columns:34px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.finding:first-of-type{border-top:0}.finding i{font:700 1.2rem Georgia,serif;color:var(--accent);font-style:normal}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px}
+.bar{display:grid;grid-template-columns:118px 1fr 34px;align-items:center;gap:8px;font-size:.85rem;margin:5px 0}
+.bar .t{background:var(--accent-soft);border-radius:4px;height:14px;overflow:hidden}.bar .t>i{display:block;height:100%;background:var(--accent)}
+.bar .n{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.stack{display:flex;height:16px;border-radius:4px;overflow:hidden;background:var(--line)}
+.stack i{display:block;height:100%}.s-ok{background:var(--ok)}.s-warn{background:var(--warn)}.s-bad{background:var(--bad)}
+.catrow{display:grid;grid-template-columns:minmax(120px,210px) 1fr;gap:10px;align-items:center;margin:7px 0;font-size:.85rem}
+.legend{display:flex;gap:14px;font-size:.8rem;color:var(--muted);margin:8px 0;flex-wrap:wrap}.legend b{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+input,select{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);min-height:40px}
+input[type=search]{flex:1 1 220px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.85rem}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{position:sticky;top:0;background:var(--surface);cursor:pointer;white-space:nowrap;font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;color:var(--muted)}
+tr.row{cursor:pointer}tr.row:hover td{background:var(--accent-soft)}
+.pill{display:inline-block;padding:1px 8px;border-radius:99px;font-size:.76rem;white-space:nowrap}
+.p-ok{background:var(--ok-bg);color:var(--ok)}.p-warn{background:var(--warn-bg);color:var(--warn)}.p-bad{background:var(--bad-bg);color:var(--bad)}.p-info{background:var(--info-bg);color:var(--info)}.p-mute{background:var(--line);color:var(--muted)}
+.detail td{background:var(--bg);padding:14px}.detail dl{display:grid;grid-template-columns:130px 1fr;gap:6px 12px;margin:0}
+.detail dt{color:var(--muted);font-size:.8rem}.detail dd{margin:0}.q{color:var(--muted);font-style:italic;font-size:.82rem}
+.count{font-size:.85rem;color:var(--muted);margin:6px 0}
+.pipe{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;counter-reset:s}
+.pipe .card{position:relative;padding-top:30px}.pipe .card::before{counter-increment:s;content:counter(s);position:absolute;top:8px;left:12px;font:700 1rem Georgia,serif;color:var(--accent)}
+.human{border-left:3px solid var(--warn);padding-left:10px;margin-top:8px;font-size:.88rem}
+.big{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:12px 0}
+.big .card b{font:700 2rem/1 Georgia,serif;display:block}.big .card small{color:var(--muted)}
+.note{background:var(--warn-bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:.9rem;margin:12px 0}
+footer{padding:24px 0 50px;color:var(--muted);font-size:.85rem}
+button.theme{position:fixed;right:12px;bottom:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:99px;padding:8px 12px;cursor:pointer;font-size:.8rem;z-index:5}
+@media (max-width:640px){.bar{grid-template-columns:96px 1fr 30px}.catrow{grid-template-columns:1fr}.detail dl{grid-template-columns:1fr}.col-hide{display:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<p style="margin:0;color:var(--muted);font-size:.85rem">An integration-readiness study</p>
+<h1>100 apps, researched by an agent, then checked against the docs</h1>
+<p class="lede">For every app: how you authenticate, whether access is self-serve or gated, what API it exposes, whether there is an MCP server, and whether a toolkit could be built today. Each answer links to the page and quote it came from. This page says where the agent got it wrong.</p>
+<div class="stats" id="stats"></div>
+<nav class="toc"><a href="#patterns">Patterns</a><a href="#table">The 100 apps</a><a href="#agent">The agent</a><a href="#verify">Verification</a><a href="#run">Run it</a><a href="#data">Data</a></nav>
+</div></header>
+
+<main class="wrap">
+<section id="patterns">
+<h2>What the 100 apps have in common</h2>
+<p class="count">All counts are computed from the final table below. They are claims with evidence, not ground truth; see the verification section for how far to trust each field.</p>
+<div id="findings"></div>
+<div class="grid2">
+<div class="card"><h3 style="margin-top:0">Auth methods (apps accepting each)</h3><div id="c-auth"></div></div>
+<div class="card"><h3 style="margin-top:0">Access tier</h3><div id="c-tier"></div></div>
+<div class="card"><h3 style="margin-top:0">Main blocker</h3><div id="c-block"></div></div>
+</div>
+<h3>Can a toolkit be built today? By category</h3>
+<div class="legend"><span><b class="s-ok"></b>ready</span><span><b class="s-warn"></b>ready with friction</span><span><b class="s-bad"></b>blocked</span></div>
+<div id="c-cat"></div>
+<div class="grid2">
+<div class="card"><h3 style="margin-top:0">Blocked apps</h3><p id="blocked" style="margin:0"></p></div>
+<div class="card"><h3 style="margin-top:0">Buildable, not yet in Composio (the backlog)</h3><p id="backlog" style="margin:0"></p></div>
+</div>
+</section>
+
+<section id="table">
+<h2>The 100 apps</h2>
+<p class="count">Click a row for the evidence. Sort by clicking a header.</p>
+<div class="controls">
+<input type="search" id="q" placeholder="Search apps, notes, auth..." aria-label="Search">
+<select id="f-cat" aria-label="Category"></select>
+<select id="f-tier" aria-label="Access tier"></select>
+<select id="f-build" aria-label="Buildability"></select>
+<select id="f-mcp" aria-label="MCP"><option value="">MCP: any</option><option value="y">Official MCP</option><option value="n">No official MCP</option></select>
+</div>
+<div class="count" id="cnt"></div>
+<div class="tablewrap"><table id="tbl"><thead></thead><tbody></tbody></table></div>
+</section>
+
+<section id="agent">
+<h2>The agent</h2>
+<p>One Python pipeline, run per app. Search and page extraction go through the Composio SDK (Tavily toolkit); extraction is a hosted LLM run through a command-line client (Groq-hosted models are supported too). Every field must carry a source id and a verbatim quote, or say "unknown".</p>
+<div class="pipe">
+<div class="card"><b>Discover</b><p>Official-domain search plus open-web search for five questions: overview, docs, auth, access, MCP. Each question keeps its own top results so one long reference page cannot crowd out the pricing page. Falls back to probing well-known official paths when search credits run out.</p></div>
+<div class="card"><b>Read</b><p>Fetches pages directly, falling back to Composio's extract tool for JavaScript-heavy docs. Cached by URL so reruns are identical. The exact text the agent read is saved, so every quote can be re-checked.</p></div>
+<div class="card"><b>Extract</b><p>BM25 picks the most relevant passages per topic. The model fills 10 fields, each with source, quote and confidence. Pass 1 is frozen with a checksum before any checking starts.</p></div>
+<div class="card"><b>Verify</b><p>Quote must occur in the page; fields must not contradict each other; evidence links must be live and on the vendor domain; MCP claims are checked against the official registry; failed fields are re-derived. Anything unproven keeps its answer but is flagged.</p></div>
+</div>
+<div class="human"><b>Where a human was needed:</b> Composio API key and Tavily credentials; deciding the schema and what counts as "buildable"; hand-labelling the 20-app sample against live vendor docs (done by the AI assistant, reading the docs, not by the agent under test); a person audited 5 of those labels at random. Sites that block bots (a few vendor help centres return 403) or render docs only in JavaScript needed a real browser to read.</div>
+</section>
+
+<section id="verify">
+<h2>How accurate is it?</h2>
+<p>Two measures, both reported with their limits.</p>
+<div class="big" id="big"></div>
+<div id="vnote"></div>
+<h3>Hand-checked accuracy by field (20 apps, 2 per category)</h3>
+<div class="tablewrap"><table id="ftbl"></table></div>
+<h3>Every remaining miss on the sample</h3>
+<p class="count">What the agent said, what the docs say, and where to check.</p>
+<div class="tablewrap"><table id="mtbl"></table></div>
+<h3>How the sample and labels were made</h3>
+<p id="method"></p>
+</section>
+
+<section id="run">
+<h2>Run it</h2>
+<p>Research one app live, end to end:</p>
+<pre><code>git clone <span id="repo1"></span>
+cd app-research-agent
+python -m venv .venv &amp;&amp; . .venv/bin/activate &amp;&amp; pip install -r requirements.txt
+cp .env.example .env   # add COMPOSIO_API_KEY and TAVILY_API_KEY
+python -m research.run --app notion</code></pre>
+<p>Or trigger it from GitHub: <b>Actions &rarr; research-one &rarr; Run workflow</b>, enter an app id, and the run prints the record with its evidence. Full 100-app run: <code>python -m research.run --all --workers 5</code>. Verification: <code>python -m verification.auto_checks</code>, <code>python -m verification.repair</code>, <code>python -m verification.score</code>.</p>
+<p><a id="repo2" href="#">Source repository</a></p>
+</section>
+
+<section id="data">
+<h2>Data for agents and analysts</h2>
+<ul>
+<li><a href="data/results.json">results.json</a>: all records, with per-field evidence URL and quote</li>
+<li><a href="data/results.csv">results.csv</a>: flat table</li>
+<li><a href="data/patterns.json">patterns.json</a>: the counts behind the findings</li>
+<li><a href="data/human_labels.csv">human_labels.csv</a>: reference labels for the 20-app sample</li>
+<li><a href="data/accuracy.json">accuracy.json</a>, <a href="llms.txt">llms.txt</a></li>
+</ul>
+</section>
+</main>
+<footer><div class="wrap">Pass 1 frozen <span id="frz"></span>. Research date: November 2026; vendor docs change, so treat each row as a dated claim.</div></footer>
+<button class="theme" id="theme" aria-label="Toggle theme">Theme</button>
+
+<script id="page-data" type="application/json">__DATA__</script>
+<script>
+const D=JSON.parse(document.getElementById("page-data").textContent);
+const R=D.rows,P=D.patterns,$=s=>document.querySelector(s);
+const TRUE=[true,'True','true'];
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const nice=s=>String(s).replace(/_/g,' ');
+const L=v=>Array.isArray(v)?v:(v==='unknown'||v==null?[]:[v]);
+const pill=(t,cls)=>`<span class="pill p-${cls}">${esc(nice(t))}</span>`;
+const tierCls={self_serve_free:'ok',self_serve_trial:'info',paid_plan:'warn',admin_approval:'warn',partner_gated:'bad',contact_sales:'bad',unknown:'mute'};
+const buildCls={ready:'ok',ready_with_friction:'warn',blocked:'bad'};
+const pct=(a,b)=>Math.round(100*a/b);
+
+// header stats
+const v=D.variants,last=v[v.length-1];
+$('#stats').innerHTML=[
+ [P.buildability_counts.ready||0,'ready to build today'],
+ [(P.buildability_counts.ready_with_friction||0),'buildable with friction'],
+ [P.buildability_counts.blocked||0,'blocked'],
+ [pct(D.evidence.p2[0],D.evidence.p2[1])+'%','answers with verifiable evidence'],
+ [(v[0].accuracy*100).toFixed(0)+'%','first-pass fields correct, hand-checked on 20 apps']
+].map(([n,l])=>`<div class="stat"><b>${n}</b><span>${l}</span></div>`).join('');
+
+// findings
+$('#findings').innerHTML=P.headlines.map((h,i)=>`<div class="finding"><i>${i+1}</i><div>${esc(h)}</div></div>`).join('');
+
+// bar charts
+function bars(el,obj,max){const m=max||Math.max(...Object.values(obj));
+ $(el).innerHTML=Object.entries(obj).map(([k,n])=>`<div class="bar"><span>${esc(nice(k))}</span><span class="t"><i style="width:${100*n/m}%"></i></span><span class="n">${n}</span></div>`).join('')}
+bars('#c-auth',P.auth_counts,P.n);bars('#c-tier',P.tier_counts,P.n);bars('#c-block',P.blocker_counts,P.n);
+$('#c-cat').innerHTML=Object.entries(P.by_category).map(([c,x])=>`<div class="catrow"><span>${esc(c)}</span><div class="stack" title="${x.ready} ready, ${x.friction} friction, ${x.blocked} blocked"><i class="s-ok" style="width:${100*x.ready/x.n}%"></i><i class="s-warn" style="width:${100*x.friction/x.n}%"></i><i class="s-bad" style="width:${100*x.blocked/x.n}%"></i></div></div>`).join('');
+$('#blocked').textContent=P.blocked_apps.join(', ');
+$('#backlog').textContent=P.composio_gap_ready.join(', ');
+
+// table
+const cols=[['n','#'],['name','App'],['category','Category','col-hide'],['access_tier','Access'],['buildability','Build'],['auth','Auth','col-hide'],['mcp','MCP'],['api_styles','API','col-hide']];
+$('#tbl thead').innerHTML='<tr>'+cols.map(([k,l,c])=>`<th data-k="${k}" class="${c||''}">${l}</th>`).join('')+'</tr>';
+const sel=(id,label,opts)=>$(id).innerHTML=`<option value="">${label}</option>`+opts.map(o=>`<option>${esc(o)}</option>`).join('');
+sel('#f-cat','Category: all',P.categories);sel('#f-tier','Access: all',Object.keys(P.tier_counts));sel('#f-build','Build: all',Object.keys(P.buildability_counts));
+let sortK='n',sortD=1,open=null;
+const FL={one_liner:'What it is',auth_methods:'Auth',access_tier:'Access',delivery:'Delivery',api_styles:'API style',api_breadth:'API size',openapi_spec:'OpenAPI spec',official_mcp:'Official MCP',buildability:'Buildability',main_blocker:'Main blocker'};
+function detail(r){
+ const ev=D.fields.map(f=>{const e=r[f+'_ev'];const val=Array.isArray(r[f])?r[f].join(', '):r[f];
+  return `<dt>${FL[f]}</dt><dd><b>${esc(nice(val))}</b>${e?`<div class="q">&ldquo;${esc(e.quote)}&rdquo; <a href="${esc(e.url)}" target="_blank" rel="noopener">source</a></div>`:'<div class="q">no quote on file</div>'}</dd>`}).join('');
+ const extra=[r.mcp_registry?.length?`MCP registry: ${esc(r.mcp_registry.slice(0,2).join(', '))}`:'',r.in_composio?`Composio toolkit: ${esc(r.composio_toolkits.slice(0,3).join(', '))}`:'No Composio toolkit slug found',r.needs_human?'Auto-flagged for human review':''].filter(Boolean).join(' · ');
+ return `<tr class="detail"><td colspan="${cols.length}"><dl>${ev}<dt>Docs</dt><dd>${r.docs_url?`<a href="${esc(r.docs_url)}" target="_blank" rel="noopener">${esc(r.docs_url)}</a>`:'-'}</dd><dt>Notes</dt><dd>${esc(r.notes||'-')}</dd><dt>Status</dt><dd>${extra}</dd></dl></td></tr>`}
+function render(){
+ const q=$('#q').value.toLowerCase(),c=$('#f-cat').value,t=$('#f-tier').value,b=$('#f-build').value,m=$('#f-mcp').value;
+ let rows=R.filter(r=>(!c||r.category===c)&&(!t||r.access_tier===t)&&(!b||r.buildability===b)&&(!m||(m==='y')===TRUE.includes(r.official_mcp))
+  &&(!q||JSON.stringify([r.name,r.category,r.notes,r.one_liner,r.auth_methods,r.main_blocker]).toLowerCase().includes(q)));
+ const key=r=>sortK==='auth'?L(r.auth_methods).join():sortK==='mcp'?String(TRUE.includes(r.official_mcp)):sortK==='api_styles'?L(r.api_styles).join():r[sortK];
+ rows.sort((a,b)=>(key(a)>key(b)?1:key(a)<key(b)?-1:0)*sortD);
+ $('#cnt').textContent=`${rows.length} of ${R.length} apps`;
+ $('#tbl tbody').innerHTML=rows.map(r=>`<tr class="row" data-n="${r.n}"><td>${r.n}</td><td><b>${esc(r.name)}</b></td><td class="col-hide">${esc(r.category)}</td><td>${pill(r.access_tier,tierCls[r.access_tier]||'mute')}</td><td>${pill(r.buildability,buildCls[r.buildability]||'mute')}</td><td class="col-hide">${L(r.auth_methods).map(a=>esc(nice(a))).join(', ')}</td><td>${TRUE.includes(r.official_mcp)?'yes':r.official_mcp==='unknown'?'?':'no'}</td><td class="col-hide">${L(r.api_styles).join(', ')}</td></tr>`+(open===r.n?detail(r):'')).join('');
+}
+$('#tbl thead').onclick=e=>{const k=e.target.dataset.k;if(!k)return;sortD=sortK===k?-sortD:1;sortK=k;render()};
+$('#tbl tbody').onclick=e=>{const tr=e.target.closest('tr.row');if(!tr)return;const n=+tr.dataset.n;open=open===n?null:n;render()};
+['#q','#f-cat','#f-tier','#f-build','#f-mcp'].forEach(s=>$(s).addEventListener('input',()=>{open=null;render()}));
+render();
+
+// verification
+const e1=D.evidence.p1,e2=D.evidence.p2;
+$('#big').innerHTML=`<div class="card"><small>Evidence you can verify, all 100 apps</small><b>${pct(e1[0],e1[1])}% &rarr; ${pct(e2[0],e2[1])}%</b><small>quote found on the cited page (${e1[0]}/${e1[1]} &rarr; ${e2[0]}/${e2[1]}). Measures that the evidence is real, not that the answer is right.</small></div>`+
+ v.map((x,i)=>`<div class="card"><small>${esc(x.name)}</small><b>${(x.accuracy*100).toFixed(1)}%</b><small>${x.correct} of ${x.total} hand-checked fields correct</small></div>`).join('');
+$('#vnote').innerHTML=`<div class="note"><b>Read this before quoting a number.</b> The first pass was already ${(v[0].accuracy*100).toFixed(1)}% accurate on the hand-checked sample, so there was little room to climb. My first repair step <i>lowered</i> accuracy (${(v[1].accuracy*100).toFixed(1)}%): when it could not re-prove a field it blanked it, throwing away answers that were right. The fix (keep the original answer, flagged as unproven) gives ${(v[2].accuracy*100).toFixed(1)}%, but I designed that fix after seeing the sample, so treat that number as optimistic and the +${v[2].correct-v[0].correct} field gain as noise. The real improvement is in the evidence: the share of answers whose quote can be found on the cited page rose from ${pct(e1[0],e1[1])}% to ${pct(e2[0],e2[1])}%.</div>`;
+const ff=D.per_field,vn=v.map(x=>x.name),fl=D.fields;
+$('#ftbl').innerHTML='<thead><tr><th>Field</th>'+vn.map(n=>`<th>${esc(n.split(' (')[0].split(':')[0])}</th>`).join('')+'</tr></thead><tbody>'+
+ fl.map(f=>'<tr><td>'+FL[f]+'</td>'+vn.map(n=>{const x=ff[n][f];const a=x.accuracy;return `<td>${x.correct}/${x.total} ${a==null?'':pill(Math.round(a*100)+'%',a>=.9?'ok':a>=.75?'warn':'bad')}</td>`}).join('')+'</tr>').join('')+'</tbody>';
+const fmt=t=>Array.isArray(t)?t.join(' or '):(t&&t.req?`includes ${t.req.join(', ')||'-'}${t.allow.length?` (may add ${t.allow.join(', ')})`:''}`:esc(t));
+$('#mtbl').innerHTML='<thead><tr><th>App</th><th>Field</th><th>Agent said</th><th>Docs say</th><th>Why / where</th></tr></thead><tbody>'+
+ D.misses.map(m=>`<tr><td>${esc(m.name)}</td><td>${esc(FL[m.field])}</td><td>${esc(nice(Array.isArray(m.pred)?m.pred.join(', '):m.pred))}</td><td>${esc(fmt(m.truth))}</td><td>${esc(m.note||'')}${m.evidence_url?` <a href="${esc(m.evidence_url)}" target="_blank" rel="noopener">docs</a>`:''}</td></tr>`).join('')+'</tbody>';
+$('#method').innerHTML=`The sample is ${D.sample.length} apps, 2 per category, drawn with a fixed random seed from the app list before any result was read: ${D.sample.map(esc).join(', ')}. ${D.labelled} fields were labelled from live vendor documentation by the AI assistant, independently of the agent's own pages; where the docs genuinely support two answers (for example a free plan that is also a trial) both are accepted. "Unknown" counts as a miss. A person audited ${D.audit.items} randomly drawn labels and agreed with ${D.audit.agreed} of ${D.audit.items}; that is too few to estimate the label error rate. Labels are published as <a href="data/human_labels.csv">human_labels.csv</a>.`;
+
+// links + footer
+$('#repo1').textContent=D.repo+'.git';$('#repo2').href=D.repo;$('#repo2').textContent=D.repo;
+$('#frz').textContent=`(${D.frozen.at}, sha256 ${D.frozen.sha}…)`;
+const root=document.documentElement;
+$('#theme').onclick=()=>{const cur=root.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');root.dataset.theme=cur==='dark'?'light':'dark'};
+</script>
+</body>
+</html>
